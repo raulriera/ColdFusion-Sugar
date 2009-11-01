@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <syntax name="sourcecode.cfm">
     <zones>
+        <include syntax="text.html.basic" />
         <zone name="meta.tag.cfoutput.cfm">
             <starts-with>
                 <expression>(?:^\s+)?&lt;((?i:cfoutput))\b(?![^>]*/>)</expression>

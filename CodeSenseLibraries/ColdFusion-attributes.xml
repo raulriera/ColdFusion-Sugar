@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CodeSense Libraries simply define lists of completions, categorized by keys. They don't define any criteria for when they should be used; this is the domain of a CodeSense Provider.
+
+-->
+<codesense version="1.0">
+
+	<behavior>
+		<append-dynamic>
+			<matched-suffix>(\s*=)|[^=]</matched-suffix>
+			<transform-into>(?1::="$1"$0)</transform-into>
+		</append-dynamic>
+	</behavior>
+	
+	<set name="com.scottmebberson.cfml.tag.cfabort.attributes">
+		<completion string="showError" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfajaximport.attributes">
+		<completion string="cssSrc" />
+		<completion string="scriptSrc" />
+		<completion string="tags" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfajaxproxy.attributes">
+		<completion string="cfc" />
+		<completion string="jsclassname" />
+		<!-- or -->
+		<completion string="bind" />
+		<completion string="onError" />
+		<completion string="onSuccess" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfapplet.attributes">
+		<completion string="appletSource" />
+		<completion string="name" />
+		<completion string="align" />
+		<completion string="height" />
+		<completion string="hSpace" />
+		<completion string="notSupported" />
+		<completion string="param_n" />
+		<completion string="vSpace" />
+		<completion string="width" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfapplication.attributes">
+		<completion string="name" />
+		<completion string="applicationTimeout" />
+		<completion string="clientManagement" />
+		<completion string="loginStorage" />
+		<completion string="scriptProtect" />
+		<completion string="secureJSON" />
+		<completion string="secureJSONPrefix" />
+		<completion string="sessionManagement" />
+		<completion string="sessionTimeout" />
+		<completion string="setClientCookies" />
+		<completion string="setDomainCookies" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfargument.attributes">
+		<completion string="name" />
+		<completion string="default" />
+		<completion string="displayname" />
+		<completion string="hint" />
+		<completion string="required" />
+		<completion string="type" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfassociate.attributes">
+		<completion string="baseTag" />
+		<completion string="dataCollection" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfcache.attributes">
+		<completion string="action" />
+		<completion string="directory" />
+		<completion string="expireURL" />
+		<completion string="password" />
+		<completion string="port" />
+		<completion string="protocol" />
+		<completion string="timespan" />
+		<completion string="username" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfcalendar.attributes">
+		<completion string="name" />
+		<completion string="dayNames" />
+		<completion string="disabled" />
+		<completion string="enabled" />
+		<completion string="endRange" />
+		<completion string="firstDayOfWeek" />
+		<completion string="height" />
+		<completion string="mask" />
+		<completion string="monthNames" />
+		<completion string="onBlur" />
+		<completion string="onChange" />
+		<completion string="onFocus" />
+		<completion string="selectedDate" />
+		<completion string="startRange" />
+		<completion string="style" />
+		<completion string="tooltip" />
+		<completion string="visible" />
+		<completion string="width" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfcase.attributes">
+		<completion string="value" />
+		<completion string="delimiters" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfcatch.attributes">
+		<completion string="type" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfchart.attributes">
+		<completion string="backgroundColor" />
+		<completion string="chartHeight" />
+		<completion string="chartWidth" />
+		<completion string="dataBackgroundColor" />
+		<completion string="font" />
+		<completion string="fontBold" />
+		<completion string="fontItalic" />
+		<completion string="fontSize" />
+		<completion string="foregroundColor" />
+		<completion string="format" />
+		<completion string="gridlines" />
+		<completion string="labelFormat" />
+		<completion string="markerSize" />
+		<completion string="name" />
+		<completion string="pieSliceStyle" />
+		<completion string="scaleFrom" />
+		<completion string="scaleTo" />
+		<completion string="seriesPlacement" />
+		<completion string="show3D" />
+		<completion string="showBorder" />
+		<completion string="showLegend" />
+		<completion string="showMarkers" />
+		<completion string="showXGridlines" />
+		<completion string="showYGridlines" />
+		<completion string="sortXAxis" />
+		<completion string="style" />
+		<completion string="title" />
+		<completion string="tipbgcolor" />
+		<completion string="tipStyle" />
+		<completion string="url" />
+		<completion string="xAxisTitle" />
+		<completion string="xAxisType" />
+		<completion string="xOffset" />
+		<completion string="yAxisTitle" />
+		<completion string="yAxisType" />
+		<completion string="yOffset" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfchartdata.attributes">
+		<completion string="item" />
+		<completion string="value" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfchartseries.attributes">
+		<completion string="type" />
+		<completion string="itemColumn" />
+		<completion string="valueColumn" />
+		<completion string="colorlist" />
+		<completion string="dataLabelStyle" />
+		<completion string="markerStyle" />
+		<completion string="paintStyle" />
+		<completion string="query" />
+		<completion string="seriesColor" />
+		<completion string="seriesLabel" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfcol.attributes">
+		<completion string="header" />
+		<completion string="text" />
+		<completion string="align" />
+		<completion string="width" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfcollection.attributes">
+		<completion string="action" />
+		<completion string="categories" />
+		<completion string="collection" />
+		<completion string="language" />
+		<completion string="name" />
+		<completion string="path" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfloop.attributes">
+		<completion string="index" />
+		<completion string="from" />
+		<completion string="to" />
+		<completion string="step" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfhttp.attributes">
+		<completion string="url" />
+		<completion string="charset" />
+		<completion string="clientCert" />
+		<completion string="clientCertPassword" />
+		<completion string="getAsBinary" />
+		<completion string="method" />
+		<completion string="password" />
+		<completion string="port" />
+		<completion string="proxyServer" />
+		<completion string="proxyPort" />
+		<completion string="proxyUser" />
+		<completion string="proxyPassword" />
+		<completion string="redirect" />
+		<completion string="resolveURL" />
+		<completion string="throwOnError" />
+		<completion string="userAgent" />
+		<completion string="username" />
+	</set>
+	
+	<!-- set name="com.macrabbit.html.tag.a.attributes">
+		<completion string="href" />
+		<completion string="hreflang" />
+		<completion string="name" />
+		<completion string="rel" />
+		<completion string="target" />
+		<completion string="type" />
+	</set -->
+	
+</codesense>

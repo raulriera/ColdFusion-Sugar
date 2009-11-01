@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings>
+
+	<setting name="tag-close-transform-expression">
+		<syntax-context>cfm, cfm *, cfc, cfc *</syntax-context>
+		<value>&lt;/$0></value>
+	</setting>
+	
+</settings>

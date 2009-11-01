@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+
+    <language id="com.scottmebberson.ColdFusion">
+        
+        <!-- Define what syntax this language should use -->
+        <!-- Note: root-zone will be deprecated in the next beta 
+               and replaced by syntax-name -->
+        <root-zone>sourcecode.cfm</root-zone>
+
+        <!-- Human readable name for the language -->
+        <name>ColdFusion</name>
+
+        <!-- Ways to detect the language (see next section) -->
+        <detectors>
+			<extension casesensitive="false">cfm</extension>
+			<extension casesensitive="false">cfc</extension>
+			<extension casesensitive="false">html</extension>
+			<extension casesensitive="false">htm</extension>
+			<combo>
+                <extension>cfm</extension>
+                <match-content lines="1">!DOCTYPE</match-content>
+            </combo>
+        </detectors>
+        
+		<meta>
+		    <name>
+		        ColdFusion
+		    </name>
+		    <description>
+		        ColdFusion Sugar for Espresso.
+		    </description>
+		    <author>
+		        Jonathan Christopher, Scott Mebberson
+		    </author>
+		    <identifier>
+		        com.scottmebberson.sugar.ColdFusion
+		    </identifier>
+		    <version status="preview">
+		        0.2
+		    </version>
+		</meta>
+		
+    </language>
+    
+</settings>

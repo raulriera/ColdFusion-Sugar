@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemizer>
+
+	<recipe name="built-in.comment">
+		<class>ESCommentItem</class>
+		<selector>cfm.comment</selector>
+	</recipe>
+
+	<!--recipe name="built-in.group.collection">
+		<start-selector>itemize.group-start:has-child(name:capture(name)), itemize.group-start</start-selector>
+		<end-selector>itemize.group-end</end-selector>
+		<subrecipes>
+			<include-root-recipes/>
+		</subrecipes>
+	</recipe-->
+
+	<recipe name="built-in.html.tag.collection">
+		<start-selector>meta.tag.open.cfm:has-child(name:capture(name))</start-selector>
+		<end-selector>meta.tag.close.cfm:has-child(name[text == $name.text])</end-selector>
+		<subrecipes>
+			<include-root-recipes/>
+		</subrecipes>
+		<class>ESXHTMLItem</class>
+	</recipe>
+	
+	<recipe name="built-in.self-closing-tag">
+		<selector>meta.tag.open.cfm:has-child(name:capture(name), empty-element-marker), meta.tag.self-closing.cfm:has-child(name:capture(name)), meta.tag.open.cfm:has-child(name:capture(name), self-closing)</selector>
+		<class>ESXHTMLItem</class>
+	</recipe>
+
+	<library>
+	</library>
+	
+</itemizer>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+@description Defines ColdFusion codesense library
+@author Scott Mebberson <scott@scottmebberson.com>
+@copyright The MIT License
+
+Copyright (c) 2009
+-->
+
+<codesense version="1.0">
+    
+	<!-- Built In Support Function -->
+	
+	<set name="com.scottmebberson.cfml.tags">
+	
+		<!-- Open tags -->
+		<behavior>
+			<append-dynamic>
+				<matched-suffix>(\scf*:)|[^:]</matched-suffix>
+				<transform-into>(?1::>$0&lt;/${completion}>)</transform-into>
+			</append-dynamic>
+		</behavior>
+	    
+	    <completion string="cfquery">
+	        <behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: name="$1" datasource="#${2:application.dsn}#" dbtype="$3" username="$4" password="$5">$0&lt;/cfquery>)</transform-into>
+				</append-dynamic>
+			</behavior>
+	    </completion>
+	    
+	    <completion string="cfloop">
+	        <behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: index="$1" from="$2" to="$3" step="$4" query="$5">$0&lt;/cfloop>)</transform-into>
+				</append-dynamic>
+			</behavior>
+	    </completion>
+	    
+	    
+	    <!-- Self closing tags -->
+	    <completion string="cfelse">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1::${1: }$2>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+	    
+	    <completion string="cfabort">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: ${1:showerror="$2" }$3/>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+	    
+	    <completion string="cfset">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: ${1:var }${2:name}="$3" $4/>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string="cfajaximport" />
+		<completion string="cfajaxproxy" />
+		<completion string="cfapplet" />
+		<completion string="cfapplication" />
+		<completion string="cfargument" />
+		<completion string="cfassociate" />
+		<completion string="cfbreak" />
+		<completion string="cfcache" />
+		<completion string="cfcalendar" />
+		<completion string="cfcase" />
+		<completion string="cfcatch" />
+		<completion string="cfchart" />
+		<completion string="cfchartdata" />
+		<completion string="cfchartseries" />
+		<completion string="cfcol" />
+		<completion string="cfcollection" />
+		<completion string="cfcomponent" />
+		<completion string="cfcontent" />
+		<completion string="cfcookie" />
+		<completion string="cfdbinfo" />
+		<completion string="cfdefaultcase" />
+		<completion string="cfdirectory" />
+		<completion string="cfdiv" />
+		<completion string="cfdocument" />
+		<completion string="cfdocumentitem" />
+		<completion string="cfdocumentsection" />
+		<completion string="cfdump" />
+		<completion string="cfelseif" />
+		<completion string="cferror" />
+		<completion string="cfexchangecalendar" />
+		<completion string="cfexchangeconnection" />
+		<completion string="cfexchangefilter" />
+		<completion string="cfexchangemail" />
+		<completion string="cfexchangetask" />
+		<completion string="cfexecute" />
+		<completion string="cfexit" />
+		<completion string="cffeed" />
+		<completion string="cffile" />
+		<completion string="cfflush" />
+		<completion string="cfform" />
+		<completion string="cfformgroup" />
+		<completion string="cfformitem" />
+		<completion string="cfftp" />
+		<completion string="cffunction" />
+		<completion string="cfgrid" />
+		<completion string="cfgridcolumn" />
+		<completion string="cfgridrow" />
+		<completion string="cfgridupdate" />
+		<completion string="cfheader" />
+		<completion string="cfhtmlhead" />
+		<completion string="cfhttp" />
+		<completion string="cfhttpparam" />
+		<completion string="cfif" />
+		<completion string="cfimage" />
+		<completion string="cfimport" />
+		<completion string="cfinclude" />
+		<completion string="cfindex" />
+		<completion string="cfinput" />
+		<completion string="cfinsert" />
+		<completion string="cfinterface" />
+		<completion string="cfinvoke" />
+		<completion string="cfinvokeargument" />
+		<completion string="cflayout" />
+		<completion string="cflayoutarea" />
+		<completion string="cfldap" />
+		<completion string="cflocation" />
+		<completion string="cflock" />
+		<completion string="cflog" />
+		<completion string="cflogin" />
+		<completion string="cfloginuser" />
+		<completion string="cflogout" />
+		<completion string="cfmail" />
+		<completion string="cfmailparam" />
+		<completion string="cfmailpart" />
+		<completion string="cfmenu" />
+		<completion string="cfmenuitem" />
+		<completion string="cfmodule" />
+		<completion string="cfNTauthenticate" />
+		<completion string="cfobject" />
+		<completion string="cfobjectcache" />
+		<completion string="cfoutput" />
+		<completion string="cfparam" />
+		<completion string="cfpdf" />
+		<completion string="cfpdfform" />
+		<completion string="cfpdfformparam" />
+		<completion string="cfpdfparam" />
+		<completion string="cfpdfsubform" />
+		<completion string="cfpod" />
+		<completion string="cfpop" />
+		<completion string="cfpresentation" />
+		<completion string="cfpresentationslide" />
+		<completion string="cfpresenter" />
+		<completion string="cfprint" />
+		<completion string="cfprocessingdirective" />
+		<completion string="cfprocparam" />
+		<completion string="cfprocresult" />
+		<completion string="cfproperty" />
+		<completion string="cfqueryparam" />
+		<completion string="cfregistry" />
+		<completion string="cfreport" />
+		<completion string="cfreportparam" />
+		<completion string="cfrethrow" />
+		<completion string="cfreturn" />
+		<completion string="cfsavecontent" />
+		<completion string="cfschedule" />
+		<completion string="cfscript" />
+		<completion string="cfsearch" />
+		<completion string="cfselect" />
+		<completion string="cfsetting" />
+		<completion string="cfsilent" />
+		<completion string="cfslider" />
+		<completion string="cfsprydataset" />
+		<completion string="cfstoredproc" />
+		<completion string="cfswitch" />
+		<completion string="cftable" />
+		<completion string="cftextarea" />
+		<completion string="cfthread" />
+		<completion string="cfthrow" />
+		<completion string="cftimer" />
+		<completion string="cftooltip" />
+		<completion string="cftrace" />
+		<completion string="cftransaction" />
+		<completion string="cftree" />
+		<completion string="cftreeitem" />
+		<completion string="cftry" />
+		<completion string="cfupdate" />
+		<completion string="cfwddx" />
+		<completion string="cfwindow" />
+		<completion string="cfxml" />
+		<completion string="cfzip" />
+		<completion string="cfzipparam" />
+		
+    </set>
+	
+</codesense>

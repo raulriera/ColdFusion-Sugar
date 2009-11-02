@@ -1,9 +1,6 @@
 <?xml version="1.0"?>
 <syntax name="sourcecode.cfm">
     <zones>
-        <!-- This enables HTML support, but seems to break CFML compleation
-        	<include syntax="text.html.basic" />
-        -->
         <zone name="meta.tag.cfoutput.cfm">
             <starts-with>
                 <expression>(?:^\s+)?&lt;((?i:cfoutput))\b(?![^>]*/>)</expression>
@@ -117,7 +114,9 @@
         </zone -->
         
         <include collection="coldfusion-comment"/>
-        <!-- include syntax="text.html.basic"/ -->
+        <!-- This enables HTML support, but seems to break CFML completion
+        <include syntax="text.html.basic"/> 
+        -->
         
     </zones>
     <library>

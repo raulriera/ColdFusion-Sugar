@@ -48,6 +48,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="name" />
 		<completion string="applicationTimeout" />
 		<completion string="clientManagement" />
+		<completion string="clientStorage" />
 		<completion string="loginStorage" />
 		<completion string="scriptProtect" />
 		<completion string="secureJSON" />
@@ -185,6 +186,248 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="name" />
 		<completion string="path" />
 	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfcomponent.attributes">
+		<completion string="bindingname" />
+		<completion string="displayname" />
+		<completion string="extends" />
+		<completion string="hint" />
+		<completion string="implements" />
+		<completion string="namespace" />
+		<completion string="output" />
+		<completion string="porttypename" />
+		<completion string="serviceaddress" />
+		<completion string="serviceportname" />
+		<completion string="style" />
+		<completion string="wsdlfile" />		
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfcontent.attributes">
+		<completion string="deleteFile" />
+		<completion string="file" />
+		<completion string="reset" />
+		<completion string="type" />
+		<completion string="variable" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfcookie.attributes">
+		<completion string="name" />
+		<completion string="domain" />
+		<completion string="expires" />
+		<completion string="path" />
+		<completion string="secure" />
+		<completion string="value" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfdbinfo.attributes">
+		<completion string="datasource" />
+		<completion string="name" />
+		<completion string="type" />
+		<completion string="dbname" />
+		<completion string="password" />
+		<completion string="pattern" />
+		<completion string="table" />
+		<completion string="username" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfdirectory.attributes">
+		<completion string="directory" />
+		<completion string="action" />
+		<completion string="filter" />
+		<completion string="listinfo" />
+		<completion string="mode" />
+		<completion string="name" />
+		<completion string="newDirectory" />
+		<completion string="recurse" />
+		<completion string="sort" />
+		<completion string="type" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfdiv.attributes">
+		<completion string="bind" />
+		<completion string="bindOnLoad" />
+		<completion string="ID" />
+		<completion string="onBindError" />
+		<completion string="tagName" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfdocument.attributes">
+		<completion string="authPassword" />
+		<completion string="authUser" />
+		<completion string="backgroundVisible" />
+		<completion string="bookmark" />
+		<completion string="encryption" />
+		<completion string="filename" />
+		<completion string="fontEmbed" />
+		<completion string="format" />
+		<completion string="localUrl" />
+		<completion string="marginBottom" />
+		<completion string="marginLeft" />
+		<completion string="marginRight" />
+		<completion string="marginTop" />
+		<completion string="mimeType" />
+		<completion string="name" />
+		<completion string="orientation" />
+		<completion string="overwrite" />
+		<completion string="ownerPassword" />
+		<completion string="pageHeight" />
+		<completion string="pageType" />
+		<completion string="pageWidth" />
+		<completion string="permissions" />
+		<completion string="proxyHost" />
+		<completion string="proxyPassword" />
+		<completion string="proxyPort" />
+		<completion string="proxyUser" />
+		<completion string="scale" />
+		<completion string="saveAsName" />
+		<completion string="src" />
+		<completion string="srcfile" />
+		<completion string="unit" />
+		<completion string="userAgent" />
+		<completion string="userPassword" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfdocumentitem.attributes">
+		<completion string="type" />
+	</set>	
+	
+	<set name="com.scottmebberson.cfml.tag.cfdocumentsection.attributes">
+		<completion string="authPassword" />
+		<completion string="authUser" />
+		<completion string="marginBottom" />
+		<completion string="marginLeft" />
+		<completion string="marginRight" />
+		<completion string="marginTop" />
+		<completion string="mimeType" />
+		<completion string="name" />
+		<completion string="src" />
+		<completion string="srcfile" />
+		<completion string="userAgent" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfdump.attributes">
+		<completion string="var" />
+		<completion string="expand" />
+		<completion string="format" />
+		<completion string="hide" />
+		<completion string="keys" />
+		<completion string="label" />
+		<completion string="metainfo" />
+		<completion string="output" />
+		<completion string="show" />
+		<completion string="showUDFs" />
+		<completion string="top" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cferror.attributes">
+		<completion string="template" />
+		<completion string="type" />
+		<completion string="exception" />
+		<completion string="mailTo" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfexchangecalendar.attributes">
+		<completion string="action" />
+		<completion string="attachmentPath" />
+		<completion string="connection" />
+		<completion string="event" />
+		<completion string="generateUniqueFilenames" />
+		<completion string="message" />
+		<completion string="name" />
+		<completion string="notify" />
+		<completion string="responseType" />
+		<completion string="result" />
+		<completion string="uid" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfexchangeconnection.attributes">
+		<completion string="action" />
+		<completion string="connection" />
+		<completion string="ExchangeServerLanguage" />
+		<completion string="folder" />
+		<completion string="formBasedAuthentication" />
+		<completion string="mailboxName" />
+		<completion string="name" />
+		<completion string="password" />
+		<completion string="port" />
+		<completion string="protocol" />
+		<completion string="proxyHost" />
+		<completion string="proxyPort" />
+		<completion string="recurse" />
+		<completion string="server" />
+		<completion string="username" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfexchangecontact.attributes">
+		<completion string="action" />
+		<completion string="attachmentPath" />
+		<completion string="connection" />
+		<completion string="contact" />
+		<completion string="generateUniqueFilenames" />
+		<completion string="name" />
+		<completion string="result" />
+		<completion string="uid" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfexchangefilter.attributes">
+		<completion string="name" />
+		<completion string="from" />
+		<completion string="to" />
+		<completion string="value" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfexchangemail.attributes">
+		<completion string="action" />
+		<completion string="attachmentPath" />
+		<completion string="connection" />
+		<completion string="destinationFolder" />
+		<completion string="folder" />
+		<completion string="generateUniqueFilenames" />
+		<completion string="mailUID" />
+		<completion string="meetingUID" />
+		<completion string="message" />
+		<completion string="name" />
+		<completion string="uid" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfexchangetask.attributes">
+		<completion string="action" />
+		<completion string="attachmentPath" />
+		<completion string="connection" />
+		<completion string="name" />
+		<completion string="result" />
+		<completion string="task" />
+		<completion string="uid" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfexecute.attributes">
+		<completion string="name" />
+		<completion string="arguments" />
+		<completion string="outputFile" />
+		<completion string="timeout" />
+		<completion string="variable" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfexit.attributes">
+		<completion string="method" />
+	</set>
+	
+	<!--	
+	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+	</set>
+	-->
 	
 	<set name="com.scottmebberson.cfml.tag.cfloop.attributes">
 		<completion string="index" />

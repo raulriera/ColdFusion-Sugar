@@ -412,6 +412,155 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="method" />
 	</set>
 	
+	<set name="com.scottmebberson.cfml.tag.cffeed.attributes">
+		<completion string="action" />
+		<completion string="columnMap" />
+		<completion string="enclosureDir" />
+		<completion string="ignoreEnclosureError" />
+		<completion string="name" />
+		<completion string="outputFile" />
+		<completion string="overwrite" />
+		<completion string="overwriteEnclosure" />
+		<completion string="properties" />
+		<completion string="proxyPassword" />
+		<completion string="proxyPort" />
+		<completion string="proxyServer" />
+		<completion string="proxyUser" />
+		<completion string="query" />
+		<completion string="source" />
+		<completion string="timeout" />
+		<completion string="userAgent" />
+		<completion string="xmlVar" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cffile.attributes">
+		<completion string="action" />
+		<completion string="file" />
+		<completion string="output" />
+		<completion string="addNewLine" />
+		<completion string="attributes" />
+		<completion string="charset" />
+		<completion string="fixnewline" />
+		<completion string="mode" />
+		<completion string="destination" />
+		<completion string="source" />
+		<completion string="variable" />
+		<completion string="fileField" />
+		<completion string="accept" />
+		<completion string="nameConflict" />
+		<completion string="result" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfflush.attributes">
+		<completion string="interval" />
+	</set>	
+	
+	<set name="com.scottmebberson.cfml.tag.cfform.attributes">
+		<completion string="accessible" />
+		<completion string="action" />
+		<completion string="archive" />
+		<completion string="codeBase" />
+		<completion string="format" />
+		<completion string="height" />
+		<completion string="id" />
+		<completion string="method" />
+		<completion string="name" />
+		<completion string="onError" />
+		<completion string="onLoad" />
+		<completion string="onReset" />
+		<completion string="onSubmit" />
+		<completion string="onSuccess" />
+		<completion string="preloader" />
+		<completion string="preserveData" />
+		<completion string="scriptSrc" />
+		<completion string="skin" />
+		<completion string="style" />
+		<completion string="timeout" />
+		<completion string="width" />
+		<completion string="wMode" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfformgroup.attributes">
+		<completion string="type" />
+		<completion string="query" />
+		<completion string="enabled" />
+		<completion string="height" />
+		<completion string="id" />
+		<completion string="label" />
+		<completion string="maxrows" />
+		<completion string="onChange" />
+		<completion string="selectedIndex" />
+		<completion string="startrow" />
+		<completion string="style" />
+		<completion string="tooltip" />
+		<completion string="visible" />
+		<completion string="width" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfformitem.attributes">
+		<completion string="type" />
+		<completion string="bind" />
+		<completion string="enabled" />
+		<completion string="height" />
+		<completion string="style" />
+		<completion string="tooltip" />
+		<completion string="visible" />
+		<completion string="width" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfftp.attributes">
+		<completion string="action" />
+		<completion string="actionparam" />
+		<completion string="buffersize" />
+		<completion string="connection" />
+		<completion string="passive" />
+		<completion string="password" />
+		<completion string="port" />
+		<completion string="proxyServer" />
+		<completion string="retryCount" />
+		<completion string="server" />
+		<completion string="stopOnError" />
+		<completion string="timeout" />
+		<completion string="username" />
+		<completion string="fingerprint" />
+		<completion string="key" />
+		<completion string="passphrase" />
+		<completion string="secure" />
+		<completion string="ASCIIExtensionList" />
+		<completion string="directory" />
+		<completion string="existing" />
+		<completion string="failIfExists" />
+		<completion string="item" />
+		<completion string="localFile" />
+		<completion string="name" />
+		<completion string="new" />
+		<completion string="result" />
+		<completion string="timeout" />
+		<completion string="transferMode" />
+		<completion string="path" />
+		<completion string="URL" />
+		<completion string="length" />
+		<completion string="lastModified" />
+		<completion string="attributes" />
+		<completion string="isDirectory" />
+		<completion string="mode" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cffunction.attributes">
+		<completion string="name" />
+		<completion string="access" />
+		<completion string="description" />
+		<completion string="displayname" />
+		<completion string="hint" />
+		<completion string="output" />
+		<completion string="returnformat" />
+		<completion string="returnType" />
+		<completion string="roles" />
+		<completion string="secureJSON" />
+		<completion string="verifyClient" />
+	</set>
+	
+	
 	<!--	
 	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">
 		<completion string="XXX" />

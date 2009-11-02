@@ -959,22 +959,6 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="roles" />
 	</set>
 
-	<!--	
-	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">
-		<completion string="XXX" />
-		<completion string="XXX" />
-		<completion string="XXX" />
-		<completion string="XXX" />
-		<completion string="XXX" />
-		<completion string="XXX" />
-		<completion string="XXX" />
-		<completion string="XXX" />
-		<completion string="XXX" />
-		<completion string="XXX" />
-		<completion string="XXX" />
-		<completion string="XXX" />
-	</set>
-	-->
 	<set name="com.scottmebberson.cfml.tag.cfloop.attributes">
 		<completion string="index" />
 		<completion string="from" />
@@ -993,13 +977,152 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="item" />
 	</set>
 	
-	<!-- set name="com.macrabbit.html.tag.a.attributes">
-		<completion string="href" />
-		<completion string="hreflang" />
-		<completion string="name" />
-		<completion string="rel" />
-		<completion string="target" />
+	<set name="com.scottmebberson.cfml.tag.cfmail.attributes">
+		<completion string="bcc" />
+		<completion string="cc" />
+		<completion string="charset" />
+		<completion string="debug" />
+		<completion string="failto" />
+		<completion string="from" />
+		<completion string="to" />
+		<completion string="subject" />
+		<completion string="group" />
+		<completion string="groupcasesensitive" />
+		<completion string="mailerid" />
+		<completion string="maxrows" />
+		<completion string="mimeattach" />
+		<completion string="password" />
+		<completion string="port" />
+		<completion string="priority" />
+		<completion string="query" />
+		<completion string="replyto" />
+		<completion string="server" />
+		<completion string="spoolenable" />
+		<completion string="startrow" />
+		<completion string="timeout" />
 		<completion string="type" />
-	</set -->
+		<completion string="username" />
+		<completion string="useSSL" />
+		<completion string="useSSL" />
+		<completion string="wraptext" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfmailparam.attributes">
+		<completion string="contentID" />
+		<completion string="disposition" />
+		<completion string="file" />
+		<completion string="name" />
+		<completion string="type" />
+		<completion string="value" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfmailpart.attributes">
+		<completion string="charset" />
+		<completion string="type" />
+		<completion string="wraptext" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfmenu.attributes">
+		<completion string="bgColor" />
+		<completion string="childStyle" />
+		<completion string="font" />
+		<completion string="fontColor" />
+		<completion string="fontSize" />
+		<completion string="menuStyle" />
+		<completion string="name" />
+		<completion string="selectedFontColor" />
+		<completion string="selectedItemColor" />
+		<completion string="type" />
+		<completion string="width" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfmenuitem.attributes">
+		<completion string="display" />
+		<completion string="childStyle" />
+		<completion string="divider" />
+		<completion string="href" />
+		<completion string="image" />
+		<completion string="menuStyle" />
+		<completion string="style" />
+		<completion string="name" />
+		<completion string="target" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfmodule.attributes">
+		<completion string="attributeCollection" />
+		<completion string="attribute_name" />
+		<completion string="name" />
+		<completion string="template" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfNTauthenticate.attributes">
+		<completion string="domain" />
+		<completion string="password" />
+		<completion string="username" />
+		<completion string="listGroups" />
+		<completion string="result" />
+		<completion string="throwOnError" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfobject.attributes">
+		<completion string="class" />
+		<completion string="name" />
+		<completion string="type" />
+		<completion string="action" />
+		<completion string="assembly" />
+		<completion string="port" />
+		<completion string="protocol" />
+		<completion string="secure" />
+		<completion string="server" />
+		<completion string="context" />
+		<completion string="component" />
+		<completion string="locale" />
+		<completion string="webservice" />
+		<completion string="password" />
+		<completion string="proxyPassword" />
+		<completion string="proxyPort" />
+		<completion string="proxyServer" />
+		<completion string="proxyUser" />
+		<completion string="refreshWSDL" />
+		<completion string="username" />
+		<completion string="wsdl2javaArgs" />
+		<completion string="wsportname" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfobjectcache.attributes">
+		<completion string="action" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfoutput.attributes">
+		<completion string="group" />
+		<completion string="groupCaseSensitive" />
+		<completion string="maxRows" />
+		<completion string="query" />
+		<completion string="startRow" />
+	</set>
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--	
+	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+		<completion string="XXX" />
+	</set>
+	-->
 	
 </codesense>

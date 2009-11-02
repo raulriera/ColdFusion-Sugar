@@ -724,7 +724,150 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="value" />
 	</set>
 	
+	<set name="com.scottmebberson.cfml.tag.cfimage.attributes">
+		<completion string="action" />
+		<completion string="angle" />
+		<completion string="color" />
+		<completion string="destination" />
+		<completion string="difficulty" />
+		<completion string="fonts" />
+		<completion string="fontSize" />
+		<completion string="format" />
+		<completion string="height" />
+		<completion string="isBase64" />
+		<completion string="name" />
+		<completion string="overwrite" />
+		<completion string="quality" />
+		<completion string="source" />
+		<completion string="structName" />
+		<completion string="text" />
+		<completion string="thickness" />
+		<completion string="width" />
+	</set>
 	
+	<set name="com.scottmebberson.cfml.tag.cfimport.attributes">
+		<completion string="taglib" />
+		<completion string="prefix" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfinclude.attributes">
+		<completion string="template" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfindex.attributes">
+		<completion string="action" />
+		<completion string="collection" />
+		<completion string="body" />
+		<completion string="category" />
+		<completion string="categoryTree" />
+		<completion string="custom1" />
+		<completion string="custom2" />
+		<completion string="custom3" />
+		<completion string="custom4" />
+		<completion string="extensions" />
+		<completion string="key" />
+		<completion string="language" />
+		<completion string="prefix" />
+		<completion string="query" />
+		<completion string="recurse" />
+		<completion string="status" />
+		<completion string="title" />
+		<completion string="type" />
+		<completion string="URLpath" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfinput.attributes">
+		<completion string="name" />
+		<completion string="autosuggest" />
+		<completion string="autosuggestBindDelay" />
+		<completion string="autosuggestMinLength" />
+		<completion string="bind" />
+		<completion string="bindAttribute" />
+		<completion string="bindOnLoad" />
+		<completion string="checked" />
+		<completion string="dayNames" />
+		<completion string="delimiter" />
+		<completion string="disabled" />
+		<completion string="enabled" />
+		<completion string="firstDayOfWeek" />
+		<completion string="height" />
+		<completion string="id" />
+		<completion string="label" />
+		<completion string="mask" />
+		<completion string="maxLength" />
+		<completion string="maxResultsDisplayed" />
+		<completion string="message" />
+		<completion string="monthNames" />
+		<completion string="onBindError" />
+		<completion string="onChange" />
+		<completion string="onClick" />
+		<completion string="onError" />
+		<completion string="onKeyDown" />
+		<completion string="onKeyUp" />
+		<completion string="onMouseDown" />
+		<completion string="onMouseUp" />
+		<completion string="onValidate" />
+		<completion string="pattern" />
+		<completion string="range" />
+		<completion string="readonly" />
+		<completion string="required" />
+		<completion string="showAutosuggestLoadingIcon" />
+		<completion string="size" />
+		<completion string="sourceForTooltip" />
+		<completion string="src" />
+		<completion string="style" />
+		<completion string="tooltip" />
+		<completion string="type" />
+		<completion string="typeahead" />
+		<completion string="validate" />
+		<completion string="validateAt" />
+		<completion string="value" />
+		<completion string="visible" />
+		<completion string="width" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfinsert.attributes">
+		<completion string="dataSource" />
+		<completion string="tableName" />
+		<completion string="formFields" />
+		<completion string="password" />
+		<completion string="tableOwner" />
+		<completion string="tableQualifier" />
+		<completion string="username" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfinterface.attributes">
+		<completion string="displayName" />
+		<completion string="extends" />
+		<completion string="hint" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfinvoke.attributes">
+		<completion string="argumentCollection" />
+		<completion string="component" />
+		<!--<completion string="input_params" />-->
+		<completion string="method" />
+		<completion string="password" />
+		<completion string="proxyPassword" />
+		<completion string="proxyPort" />
+		<completion string="proxyServer" />
+		<completion string="proxyUser" />
+		<completion string="refreshWSDL" />
+		<completion string="returnVariable" />
+		<completion string="servicePort" />
+		<completion string="timeout" />
+		<completion string="username" />
+		<completion string="webservice" />
+		<completion string="wsdl2javaArgs" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfinvokeargument.attributes">
+		<completion string="name" />
+		<completion string="value" />
+		<completion string="omit" />
+	</set>
+
+
 	<!--	
 	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">
 		<completion string="XXX" />
@@ -741,7 +884,6 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="XXX" />
 	</set>
 	-->
-	
 	<set name="com.scottmebberson.cfml.tag.cfloop.attributes">
 		<completion string="index" />
 		<completion string="from" />

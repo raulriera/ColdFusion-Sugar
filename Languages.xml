@@ -31,13 +31,13 @@
 		        ColdFusion Sugar for Espresso.
 		    </description>
 		    <author>
-		        Jonathan Christopher, Scott Mebberson
+		        Jonathan Christopher, Scott Mebberson, Raul Riera
 		    </author>
 		    <identifier>
 		        com.scottmebberson.sugar.ColdFusion
 		    </identifier>
 		    <version status="preview">
-		        0.2
+		        0.3
 		    </version>
 		</meta>
 		

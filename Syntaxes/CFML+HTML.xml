@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+@description Defines CFML syntax zones
+@author Raul Riera <rieraraul@gmail.com>
+@copyright The MIT License
+-->
+<syntax name="sourcecode.cfm.html">
+	<zones>
+		<include syntax="sourcecode.cfm" />
+		<include syntax="text.html.basic" />		
+	</zones>
+
+</syntax>

@@ -44,7 +44,7 @@
                         <expression>(?=&lt;/(?i:cfquery))</expression>
                     </ends-with>
                     <subzones>
-                        <include syntax="source.sql"/>
+                        <include syntax="sourcecode.sql"/>
                     </subzones>
                 </zone>
             </subzones>

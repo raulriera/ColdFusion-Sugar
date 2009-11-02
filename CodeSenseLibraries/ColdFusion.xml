@@ -54,7 +54,7 @@ Copyright (c) 2009
 			<behavior>
 				<append-dynamic>
 					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: ${1:showerror="$2" }$3/>$0)</transform-into>
+					<transform-into>(?1:: ${1:showError="$2" }$3/>$0)</transform-into>
 				</append-dynamic>
 			</behavior>
 		</completion>

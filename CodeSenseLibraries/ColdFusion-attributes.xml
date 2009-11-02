@@ -867,6 +867,97 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="omit" />
 	</set>
 
+	<set name="com.scottmebberson.cfml.tag.cflayout.attributes">
+		<completion string="type" />
+		<completion string="align" />
+		<completion string="name" />
+		<completion string="padding" />
+		<completion string="style" />
+		<completion string="tabHeight" />
+		<completion string="tabPosition" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cflayoutarea.attributes">
+		<completion string="align" />
+		<completion string="closable" />
+		<completion string="collapsible" />
+		<completion string="position" />
+		<completion string="disabled" />
+		<completion string="initCollapsed" />
+		<completion string="initHide" />
+		<completion string="maxSize" />
+		<completion string="minSize" />
+		<completion string="name" />
+		<completion string="onBindError" />
+		<completion string="overflow" />
+		<completion string="refreshOnActivate" />
+		<completion string="selected" />
+		<completion string="size" />
+		<completion string="source" />
+		<completion string="splitter" />
+		<completion string="style" />
+		<completion string="title" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfldap.attributes">
+		<completion string="action" />
+		<completion string="server" />
+		<completion string="attributes" />
+		<completion string="delimiter" />
+		<completion string="dn" />
+		<completion string="filter" />
+		<completion string="maxRows" />
+		<completion string="modifyType" />
+		<completion string="name" />
+		<completion string="password" />
+		<completion string="port" />
+		<completion string="rebind" />
+		<completion string="referral" />
+		<completion string="returnAsBinary" />
+		<completion string="scope" />
+		<completion string="secure" />
+		<completion string="separator" />
+		<completion string="sort" />
+		<completion string="sortControl" />
+		<completion string="start" />
+		<completion string="startRow" />
+		<completion string="timeout" />
+		<completion string="username" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cflocation.attributes">
+		<completion string="url" />
+		<completion string="addToken" />
+		<completion string="statusCode" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cflock.attributes">
+		<completion string="timeout" />
+		<completion string="name" />
+		<completion string="scope" />
+		<completion string="throwOnTimeout" />
+		<completion string="type" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cflog.attributes">
+		<completion string="text" />
+		<completion string="application" />
+		<completion string="file" />
+		<completion string="log" />
+		<completion string="type" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cflogin.attributes">
+		<completion string="applicationtoken" />
+		<completion string="cookiedomain" />
+		<completion string="idletimeout" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfloginuser.attributes">
+		<completion string="name" />
+		<completion string="password" />
+		<completion string="roles" />
+	</set>
 
 	<!--	
 	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">
@@ -889,26 +980,17 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="from" />
 		<completion string="to" />
 		<completion string="step" />
-	</set>
-	
-	<set name="com.scottmebberson.cfml.tag.cfhttp.attributes">
-		<completion string="url" />
-		<completion string="charset" />
-		<completion string="clientCert" />
-		<completion string="clientCertPassword" />
-		<completion string="getAsBinary" />
-		<completion string="method" />
-		<completion string="password" />
-		<completion string="port" />
-		<completion string="proxyServer" />
-		<completion string="proxyPort" />
-		<completion string="proxyUser" />
-		<completion string="proxyPassword" />
-		<completion string="redirect" />
-		<completion string="resolveURL" />
-		<completion string="throwOnError" />
-		<completion string="userAgent" />
-		<completion string="username" />
+		<completion string="condition" />
+		<completion string="query" />
+		<completion string="startRow" />
+		<completion string="endRow" />
+		<completion string="list" />
+		<completion string="array" />
+		<completion string="characters" />
+		<completion string="delimiters" />
+		<completion string="file" />
+		<completion string="collection" />
+		<completion string="item" />
 	</set>
 	
 	<!-- set name="com.macrabbit.html.tag.a.attributes">

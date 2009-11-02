@@ -560,6 +560,170 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="verifyClient" />
 	</set>
 	
+	<set name="com.scottmebberson.cfml.tag.cfgrid.attributes">
+		<completion string="name" />
+		<completion string="align" />
+		<completion string="appendKey" />
+		<completion string="autoWidth" />
+		<completion string="bgColor" />
+		<completion string="bind" />
+		<completion string="bindOnLoad" />
+		<completion string="bold" />
+		<completion string="colHeaderAlign" />
+		<completion string="colHeaderBold" />
+		<completion string="colHeaderFont" />
+		<completion string="colHeaderFontSize" />
+		<completion string="colHeaderItalic" />
+		<completion string="colHeaders" />
+		<completion string="colHeaderTextColor" />
+		<completion string="delete" />
+		<completion string="deleteButton" />
+		<completion string="enabled" />
+		<completion string="font" />
+		<completion string="fontSize" />
+		<completion string="format" />
+		<completion string="gridDataAlign" />
+		<completion string="gridLines" />
+		<completion string="height" />
+		<completion string="highlightHref" />
+		<completion string="href" />
+		<completion string="hrefKey" />
+		<completion string="hSpace" />
+		<completion string="insert" />
+		<completion string="insertButton" />
+		<completion string="italic" />
+		<completion string="maxRows" />
+		<completion string="notSupported" />
+		<completion string="onBlur" />
+		<completion string="onChange" />
+		<completion string="onError" />
+		<completion string="onFocus" />
+		<completion string="onValidate" />
+		<completion string="pageSize" />
+		<completion string="pictureBar" />
+		<completion string="preservePageOnSort" />
+		<completion string="query" />
+		<completion string="rowHeaderAlign" />
+		<completion string="rowHeaderBold" />
+		<completion string="rowHeaderFont" />
+		<completion string="rowHeaderFontSize" />
+		<completion string="rowHeaderItalic" />
+		<completion string="rowHeaders" />
+		<completion string="rowHeaderTextColor" />
+		<completion string="rowHeight" />
+		<completion string="selectColor" />
+		<completion string="selectMode" />
+		<completion string="selectOnLoad" />
+		<completion string="sort" />
+		<completion string="sortAscendingButton" />
+		<completion string="sortDescendingButton" />
+		<completion string="stripeRowColor" />
+		<completion string="stripeRows" />
+		<completion string="style" />
+		<completion string="target" />
+		<completion string="textColor" />
+		<completion string="tooltip" />
+		<completion string="visible" />
+		<completion string="vSpace" />
+		<completion string="width" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfgridcolumn.attributes">
+		<completion string="name" />
+		<completion string="bgColor" />
+		<completion string="bold" />
+		<completion string="dataAlign" />
+		<completion string="display" />
+		<completion string="font" />
+		<completion string="fontSize" />
+		<completion string="header" />
+		<completion string="headerAlign" />
+		<completion string="headerBold" />
+		<completion string="headerFont" />
+		<completion string="headerFontSize" />
+		<completion string="headerItalic" />
+		<completion string="headerTextColor" />
+		<completion string="href" />
+		<completion string="hrefKey" />
+		<completion string="italic" />
+		<completion string="mask" />
+		<completion string="numberFormat" />
+		<completion string="select" />
+		<completion string="target" />
+		<completion string="textColor" />
+		<completion string="type" />
+		<completion string="values" />
+		<completion string="valuesDelimiter" />
+		<completion string="valuesDisplay" />
+		<completion string="width" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfgridrow.attributes">
+		<completion string="data" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfgridupdate.attributes">
+		<completion string="grid" />
+		<completion string="dataSource" />
+		<completion string="tableName" />
+		<completion string="keyOnly" />
+		<completion string="password" />
+		<completion string="tableOwner" />
+		<completion string="tableQualifier" />
+		<completion string="username" />
+	</set>	
+
+	<set name="com.scottmebberson.cfml.tag.cfheader.attributes">
+		<completion string="charset" />
+		<completion string="name" />
+		<completion string="statusCode" />
+		<completion string="statusText" />
+		<completion string="value" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfhtmlhead.attributes">
+		<completion string="text" />
+	</set>	
+	
+	<set name="com.scottmebberson.cfml.tag.cfhttp.attributes">
+		<completion string="url" />
+		<completion string="charset" />
+		<completion string="clientCert" />
+		<completion string="clientCertPassword" />
+		<completion string="getAsBinary" />
+		<completion string="method" />
+		<completion string="password" />
+		<completion string="port" />
+		<completion string="proxyServer" />
+		<completion string="proxyPort" />
+		<completion string="proxyUser" />
+		<completion string="proxyPassword" />
+		<completion string="redirect" />
+		<completion string="resolveURL" />
+		<completion string="throwOnError" />
+		<completion string="timeout" />
+		<completion string="userAgent" />
+		<completion string="username" />
+		<completion string="multipart" />
+		<completion string="result" />
+		<completion string="file" />
+		<completion string="path" />
+		<completion string="columns" />
+		<completion string="delimiter" />
+		<completion string="firstrowasheaders" />
+		<completion string="name" />
+		<completion string="textQualifier" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfhttpparam.attributes">
+		<completion string="type" />
+		<completion string="encoded" />
+		<completion string="file" />
+		<completion string="mimeType" />
+		<completion string="name" />
+		<completion string="value" />
+	</set>
+	
 	
 	<!--	
 	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">

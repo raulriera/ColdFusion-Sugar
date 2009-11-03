@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<syntax name="sourcecode.cfm">
+    <zones>
+        <!-- CFML Output Block; <cfoutput>...</cfoutput> -->
+        <zone name="meta.tag.cfoutput.cfm">
+            <starts-with>
+                <expression>(?:^\s+)?&lt;((?i:cfoutput))\b(?![^>]*/>)</expression>
+                <capture number="1" name="entity.name.tag.cfoutput.cfm"/>
+            </starts-with>
+            <ends-with>
+                <expression>&lt;/((?i:cfoutput))>(?:\s*\n)?</expression>
+                <capture number="1" name="entity.name.tag.cfoutput.cfm"/>
+            </ends-with>
+            <subzones>
+                <include collection="tag-stuff"/>
+                <zone>
+                    <starts-with>
+                        <expression>></expression>
+                    </starts-with>
+                    <ends-with>
+                        <expression>(?=&lt;/(?i:cfoutput))</expression>
+                    </ends-with>
+                    <subzones name="meta.scope.output.cfm">
+                        <include syntax="$self"/>
+                    </subzones>
+                </zone>
+            </subzones>
+        </zone>
+        
+        <!-- CFML Query Block; <cfquery>...</cfquery> -->
+        <zone name="meta.tag.cfquery.cfm">
+            <starts-with>
+                <expression>(?:^\s+)?&lt;((?i:cfquery))\b(?![^>]*/>)</expression>
+                <capture number="1" name="entity.name.tag.cfquery.cfm"/>
+            </starts-with>
+            <ends-with>
+                <expression>&lt;/((?i:cfquery))>(?:\s*\n)?</expression>
+                <capture number="1" name="entity.name.tag.cfquery.cfm"/>
+            </ends-with>
+            <subzones>
+                <include collection="tag-stuff"/>
+                <zone name="source.sql.embedded">
+                    <starts-with>
+                        <expression>(?&lt;=>)</expression>
+                    </starts-with>
+                    <ends-with>
+                        <expression>(?=&lt;/(?i:cfquery))</expression>
+                    </ends-with>
+                    <subzones>
+                        <include syntax="sourcecode.sql"/>
+                    </subzones>
+                </zone>
+            </subzones>
+        </zone>
+
+		<zone name="meta.tag.self-closing.cfm">
+			<starts-with>
+				<expression>(&lt;)((?i:cf)(abort|else|set|argument|directory|file|return|input))</expression>
+				<capture number="1" name="punctuation.definition.begin"/>
+				<capture number="2" name="entity.name.tag.cfm"/>
+			</starts-with>
+			<ends-with>
+				<expression>(/?)(>)</expression>
+				<capture number="1" name="punctuation.definition.end.self-closing"/>
+				<capture number="2" name="punctuation.definition.end"/>
+			</ends-with>
+			<subzones>
+				<include collection="tag-stuff"/>
+			</subzones>
+		</zone>
+        
+        <zone name="meta.tag.open.other.cfm">
+            <starts-with>
+                <expression>(&lt;)((?i:cf)([a-zA-Z0-9]+))(?=[^>]*>)</expression>
+                <capture number="1" name="punctuation.definition.begin"/>
+                <capture number="2" name="entity.name.tag.cfm"/>
+            </starts-with>
+            <ends-with>
+                <expression>(/?)(>)</expression>
+				<capture number="1" name="punctuation.definition.end.self-closing"/>
+				<capture number="2" name="punctuation.definition.end"/>
+            </ends-with>
+            <subzones>
+                <include collection="tag-stuff"/>
+            </subzones>
+        </zone>
+        
+        <zone name="meta.tag.close.other.cfm">
+            <starts-with>
+                <expression>(&lt;/)((?i:cf)([a-zA-Z0-9]+))(?=[^>]*>)</expression>
+                <capture number="1" name="punctuation.definition.begin"/>
+                <capture number="2" name="entity.name.tag.cfm"/>
+            </starts-with>
+            <ends-with>
+                <expression>(>)</expression>
+				<capture number="2" name="punctuation.definition.end"/>
+            </ends-with>
+            <subzones>
+                <include collection="tag-stuff"/>
+            </subzones>
+        </zone>
+        
+        <!-- zone name="meta.tag.any.cfm">
+            <starts-with>
+                <expression>(&lt;)/?((?i:cf)([a-zA-Z0-9]+))(?=[^>]*>)</expression>
+                <capture number="1" name="punctuation.definition.begin"/>
+                <capture number="2" name="entity.name.tag.cfm"/>
+            </starts-with>
+            <ends-with>
+                <expression>(/?)(>)</expression>
+				<capture number="1" name="punctuation.definition.end.self-closing"/>
+				<capture number="2" name="punctuation.definition.end"/>
+            </ends-with>
+            <subzones>
+                <include collection="tag-stuff"/>
+            </subzones>
+        </zone -->
+        
+        <include collection="coldfusion-comment"/>
+        <!-- This enables HTML support, but seems to break CFML completion 
+        <include syntax="text.html.basic"/> 
+        -->
+        
+    </zones>
+    
+    <library>    
+        <collection name="coldfusion-comment">
+            <zone name="comment.block.cfm">
+                <starts-with>
+                    <expression>&lt;!---</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>---></expression>
+                </ends-with>
+                <subzones>
+                    <include collection="coldfusion-comment"/>
+                </subzones>
+            </zone>
+        </collection>
+        
+        <collection name="embedded-code"/>
+        
+        <!-- Keywords -->
+        <collection name="literal-keyword">
+            <!-- true -->
+            <zone name="literal.keyword.bool.true">
+            	<expression>\btrue\b</expression>
+            </zone>
+            <!-- false -->
+            <zone name="literal.keyword.bool.false">
+            	<expression>\bfalse\b</expression>
+            </zone>
+            <!-- var -->
+            <zone name="literal.keyword.local.var">
+            	<expression>\bvar\b</expression>
+            </zone>
+        </collection>
+        
+        <collection name="entities">
+            <zone name="constant.character.entity.html">
+                <expression>&amp;([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);</expression>
+            </zone>
+            <zone name="invalid.illegal.bad-ampersand.html">
+                <expression>&amp;</expression>
+            </zone>
+        </collection>
+        
+        <!-- Strings double quoted -->
+        <collection name="string-double-quoted">
+            <zone name="string.quoted.double.cfm">
+                <starts-with>
+                    <expression>"</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>"</expression>
+                </ends-with>
+                <subzones>
+                    <include collection="embedded-code"/>
+                    <include collection="entities"/>
+                </subzones>
+            </zone>
+        </collection>
+        
+        <!-- Strings single quoted -->
+        <collection name="string-single-quoted">
+            <zone name="string.quoted.single.cfm">
+                <starts-with>
+                    <expression>'</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>'</expression>
+                </ends-with>
+                <subzones>
+                    <include collection="embedded-code"/>
+                    <include collection="entities"/>
+                </subzones>
+            </zone>
+        </collection>
+        
+        <!-- collection name="tag-generic-attribute">
+            <zone name="entity.other.attribute-name.cfm">
+                <expression>\b([a-zA-Z\-:]+)</expression>
+            </zone>
+        </collection -->
+        
+        <!-- Tag attributes -->
+        <collection name="tag-attributes">
+            <zone>
+                <expression>\s+([-_a-zA-Z0-9:]+)(=)</expression>
+                <capture number="1" name="attribute-name">
+					<subzones>
+						<zone>
+							<expression>([^:]+)(:)(.*)</expression>
+							<capture number="1" name="namespace"/>
+							<capture number="2" name="punctuation.separator"/>
+							<capture number="3" name="localname"/>
+						</zone>
+					</subzones>
+				</capture>
+                <capture number="2" name="punctuation.separator.attribute"/>
+                <capture number="3" name="punctuation.separator.namespace"/>
+            </zone>
+            <include collection="strings"/>
+        </collection>
+        
+        <collection name="tag-id-attribute">
+            <zone name="meta.attribute-with-value.id.cfm">
+                <starts-with>
+                    <expression>\b(id)\b\s*=</expression>
+                    <capture number="1" name="entity.other.attribute-name.id.html"/>
+                </starts-with>
+                <ends-with>
+                    <expression>(?&lt;='|")</expression>
+                    <capture number="1" name="entity.other.attribute-name.id.html"/>
+                </ends-with>
+                <subzones>
+                    <zone name="string.quoted.double.cfm">
+                        <starts-with>
+                            <expression>"</expression>
+                        </starts-with>
+                        <ends-with>
+                            <expression>"</expression>
+                        </ends-with>
+                        <subzones name="meta.toc-list.id.cfm">
+                            <include collection="embedded-code"/>
+                            <include collection="entities"/>
+                        </subzones>
+                    </zone>
+                    <zone name="string.quoted.single.cfm">
+                        <starts-with>
+                            <expression>'</expression>
+                        </starts-with>
+                        <ends-with>
+                            <expression>'</expression>
+                        </ends-with>
+                        <subzones name="meta.toc-list.id.cfm">
+                            <include collection="embedded-code"/>
+                            <include collection="entities"/>
+                        </subzones>
+                    </zone>
+                </subzones>
+            </zone>
+        </collection>
+        
+        <!-- Other tag stuff -->
+        <collection name="tag-stuff">
+            <include collection="tag-id-attribute"/>
+            <include collection="tag-attributes"/>
+            <include collection="string-double-quoted"/>
+            <include collection="string-single-quoted"/>
+            <include collection="embedded-code"/>
+            <include collection="literal-keyword"/>
+        </collection>      
+            
+    </library>
+</syntax>

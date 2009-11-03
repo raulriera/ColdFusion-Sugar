@@ -1517,6 +1517,159 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="expression" />
 	</set>
 
+	<set name="com.scottmebberson.cfml.tag.cftable.attributes">
+		<completion string="query" />
+		<completion string="border" />
+		<completion string="colHeaders" />
+		<completion string="colSpacing" />
+		<completion string="headerLines" />
+		<completion string="HTMLTable" />
+		<completion string="maxRows" />
+		<completion string="startRow" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cftextarea.attributes">
+		<completion string="name" />
+		<completion string="basepath" />
+		<completion string="bind" />
+		<completion string="bindAttribute" />
+		<completion string="bindOnLoad" />
+		<completion string="disabled" />
+		<completion string="enabled" />
+		<completion string="fontFormats" />
+		<completion string="fontNames" />
+		<completion string="fontSizes" />
+		<completion string="height" />
+		<completion string="html" />
+		<completion string="label" />
+		<completion string="maxlength" />
+		<completion string="message" />
+		<completion string="onBindError" />
+		<completion string="onChange" />
+		<completion string="onClick" />
+		<completion string="onError" />
+		<completion string="onKeyDown" />
+		<completion string="onKeyUp" />
+		<completion string="onMouseDown" />
+		<completion string="onMouseUp" />
+		<completion string="onValidate" />
+		<completion string="pattern" />
+		<completion string="range" />
+		<completion string="required" />
+		<completion string="richtext" />
+		<completion string="skin" />
+		<completion string="sourceForToolTip" />
+		<completion string="style" />
+		<completion string="stylesXML" />
+		<completion string="templatesXML" />
+		<completion string="toolbar" />
+		<completion string="toolbarOnFocus" />
+		<completion string="tooltip" />
+		<completion string="validate" />
+		<completion string="validateAt" />
+		<completion string="value" />
+		<completion string="visible" />
+		<completion string="width" />
+		<completion string="wrap" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfthread.attributes">
+		<completion string="action" />
+		<completion string="duration" />
+		<completion string="name" />
+		<completion string="priority" />
+		<completion string="timeout" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfthrow.attributes">
+		<completion string="detail" />
+		<completion string="errorCode" />
+		<completion string="extendedInfo" />
+		<completion string="message" />
+		<completion string="object" />
+		<completion string="type" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cftimer.attributes">
+		<completion string="label" />
+		<completion string="type" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cftooltip.attributes">
+		<completion string="autoDismissDelay" />
+		<completion string="hideDelay" />
+		<completion string="preventOverlap" />
+		<completion string="showDelay" />
+		<completion string="sourceForTooltip" />
+		<completion string="tooltip" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cftrace.attributes">
+		<completion string="abort" />
+		<completion string="category" />
+		<completion string="inline" />
+		<completion string="text" />
+		<completion string="type" />
+		<completion string="var" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cftransaction.attributes">
+		<completion string="action" />
+		<completion string="isolation" />
+		<completion string="savepoint" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cftree.attributes">
+		<completion string="name" />
+		<completion string="align" />
+		<completion string="appendKey" />
+		<completion string="bold" />
+		<completion string="border" />
+		<completion string="cache" />
+		<completion string="completePath" />
+		<completion string="delimiter" />
+		<completion string="enabled" />
+		<completion string="font" />
+		<completion string="fontSize" />
+		<completion string="format" />
+		<completion string="height" />
+		<completion string="highlightHref" />
+		<completion string="hScroll" />
+		<completion string="hSpace" />
+		<completion string="italic" />
+		<completion string="lookAndFeel" />
+		<completion string="message" />
+		<completion string="notSupported" />
+		<completion string="onBlur" />
+		<completion string="onChange" />
+		<completion string="onError" />
+		<completion string="onFocus" />
+		<completion string="onValidate" />
+		<completion string="required" />
+		<completion string="style" />
+		<completion string="tooltip" />
+		<completion string="visible" />
+		<completion string="vScroll" />
+		<completion string="vSpace" />
+		<completion string="width" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cftreeitem.attributes">
+		<completion string="value" />
+		<completion string="bind" />
+		<completion string="display" />
+		<completion string="expand" />
+		<completion string="href" />
+		<completion string="img" />
+		<completion string="imgopen" />
+		<completion string="parent" />
+		<completion string="query" />
+		<completion string="queryAsRoot" />
+		<completion string="target" />
+		<completion string="onBindError" />
+	</set>
+
+
 	<!--	
 	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">
 		<completion string="XXX" />

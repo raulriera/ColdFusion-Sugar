@@ -142,17 +142,36 @@
         
         <!-- Keywords -->
         <collection name="literal-keyword">
-            <!-- true -->
             <zone name="literal.keyword.bool.true">
             	<expression>\btrue\b</expression>
             </zone>
-            <!-- false -->
             <zone name="literal.keyword.bool.false">
             	<expression>\bfalse\b</expression>
             </zone>
-            <!-- var -->
             <zone name="literal.keyword.local.var">
             	<expression>\bvar\b</expression>
+            </zone>
+        </collection>
+        
+        <!-- Logical Operators -->
+        <collection name="logical-operator">
+            <zone name="logical.operator.not">
+            	<expression>\bNOT\b</expression>
+            </zone>
+            <zone name="logical.operator.and">
+            	<expression>\bAND\b</expression>
+            </zone>
+            <zone name="logical.operator.or">
+            	<expression>\bOR\b</expression>
+            </zone>
+            <zone name="logical.operator.xor">
+            	<expression>\bXOR\b</expression>
+            </zone>
+            <zone name="logical.operator.eqv">
+            	<expression>\bEQV\b</expression>
+            </zone>
+            <zone name="logical.operator.imp">
+            	<expression>\bIMP\b</expression>
             </zone>
         </collection>
         
@@ -270,6 +289,7 @@
             <include collection="string-single-quoted"/>
             <include collection="embedded-code"/>
             <include collection="literal-keyword"/>
+            <include collection="logical-operator"/>
         </collection>      
             
     </library>

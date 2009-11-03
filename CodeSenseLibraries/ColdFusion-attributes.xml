@@ -1375,10 +1375,147 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="expr" />
 	</set>
 
+	<set name="com.scottmebberson.cfml.tag.cfsavecontent.attributes">
+		<completion string="variable" />
+	</set>
 
+	<set name="com.scottmebberson.cfml.tag.cfschedule.attributes">
+		<completion string="action" />
+		<completion string="task" />
+		<completion string="endDate" />
+		<completion string="endTime" />
+		<completion string="file" />
+		<completion string="interval" />
+		<completion string="operation" />
+		<completion string="password" />
+		<completion string="path" />
+		<completion string="port" />
+		<completion string="proxyPassword" />
+		<completion string="proxyPort" />
+		<completion string="proxyServer" />
+		<completion string="proxyUser" />
+		<completion string="publish" />
+		<completion string="requestTimeOut" />
+		<completion string="resolveURL" />
+		<completion string="startDate" />
+		<completion string="startTime" />
+		<completion string="url" />
+		<completion string="username" />
+	</set>
 
+	<set name="com.scottmebberson.cfml.tag.cfsearch.attributes">
+		<completion string="name" />
+		<completion string="collection" />
+		<completion string="category" />
+		<completion string="categoryTree" />
+		<completion string="criteria" />
+		<completion string="contextBytes" />
+		<completion string="contextHighlightBegin" />
+		<completion string="contextHighlightEnd" />
+		<completion string="contextPassages" />
+		<completion string="language" />
+		<completion string="maxRows" />
+		<completion string="previousCriteria" />
+		<completion string="startRow" />
+		<completion string="status" />
+		<completion string="suggestions" />
+		<completion string="type" />
+	</set>
 
+	<set name="com.scottmebberson.cfml.tag.cfselect.attributes">
+		<completion string="name" />
+		<completion string="bind" />
+		<completion string="bindAttribute" />
+		<completion string="bindOnLoad" />
+		<completion string="display" />
+		<completion string="editable" />
+		<completion string="enabled" />
+		<completion string="group" />
+		<completion string="height" />
+		<completion string="id" />
+		<completion string="label" />
+		<completion string="message" />
+		<completion string="multiple" />
+		<completion string="onBindError" />
+		<completion string="onChange" />
+		<completion string="onClick" />
+		<completion string="onError" />
+		<completion string="onKeyDown" />
+		<completion string="onKeyUp" />
+		<completion string="onMouseDown" />
+		<completion string="onMouseUp" />
+		<completion string="query" />
+		<completion string="queryPosition" />
+		<completion string="required" />
+		<completion string="selected" />
+		<completion string="size" />
+		<completion string="sourceForTooltip" />
+		<completion string="style" />
+		<completion string="tooltip" />
+		<completion string="value" />
+		<completion string="visible" />
+		<completion string="width" />
+	</set>
 
+	<set name="com.scottmebberson.cfml.tag.cfset.attributes">
+		<completion string="variable_name" />
+		<completion string="var" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfsetting.attributes">
+		<completion string="enableCFoutputOnly" />
+		<completion string="requestTimeout" />
+		<completion string="showDebugOutput" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfslider.attributes">
+		<completion string="name" />
+		<completion string="align" />
+		<completion string="bgColor" />
+		<completion string="bold" />
+		<completion string="font" />
+		<completion string="fontSize" />
+		<completion string="height" />
+		<completion string="hSpace" />
+		<completion string="italic" />
+		<completion string="label" />
+		<completion string="lookAndFeel" />
+		<completion string="message" />
+		<completion string="notSupported" />
+		<completion string="onError" />
+		<completion string="onValidate" />
+		<completion string="range" />
+		<completion string="scale" />
+		<completion string="textColor" />
+		<completion string="value" />
+		<completion string="vertical" />
+		<completion string="vSpace" />
+		<completion string="width" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfsprydataset.attributes">
+		<completion string="bind" />
+		<completion string="name" />
+		<completion string="onBindError" />
+		<completion string="options" />
+		<completion string="type" />
+		<completion string="xpath" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfstoredproc.attributes">
+		<completion string="dataSource" />
+		<completion string="procedure" />
+		<completion string="blockFactor" />
+		<completion string="debug" />
+		<completion string="password" />
+		<completion string="result" />
+		<completion string="returnCode" />
+		<completion string="username" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfswitch.attributes">
+		<completion string="expression" />
+	</set>
 
 	<!--	
 	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">

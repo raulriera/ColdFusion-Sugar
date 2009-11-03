@@ -1101,13 +1101,210 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="startRow" />
 	</set>
 	
+	<set name="com.scottmebberson.cfml.tag.cfparam.attributes">
+		<completion string="name" />
+		<completion string="default" />
+		<completion string="max" />
+		<completion string="min" />
+		<completion string="pattern" />
+		<completion string="type" />
+	</set>
 	
+	<set name="com.scottmebberson.cfml.tag.cfpdf.attributes">
+		<completion string="action" />
+		<completion string="ascending" />
+		<completion string="copyFrom" />
+		<completion string="ddxfile" />
+		<completion string="destination" />
+		<completion string="encrypt" />
+		<completion string="encrypt" />
+		<completion string="foreground" />
+		<completion string="format" />
+		<completion string="image" />
+		<completion string="imagePrefix" />
+		<completion string="info" />
+		<completion string="inputFiles" />
+		<completion string="isBase64" />
+		<completion string="keepBookmark" />
+		<completion string="name" />
+		<completion string="newOwnerPassword" />
+		<completion string="newUserPassword" />
+		<completion string="opacity" />
+		<completion string="order" />
+		<completion string="outputFiles" />
+		<completion string="overwrite" />
+		<completion string="pages" />
+		<completion string="password" />
+		<completion string="permissions" />
+		<completion string="position" />
+		<completion string="resolution" />
+		<completion string="rotation" />
+		<completion string="saveOption" />
+		<completion string="scale" />
+		<completion string="showOnPrint" />
+		<completion string="source" />
+		<completion string="stopOnError" />
+		<completion string="transparent" />
+		<completion string="version" />
+	</set>
 	
+	<set name="com.scottmebberson.cfml.tag.cfpdfform.attributes">
+		<completion string="action" />
+		<completion string="destination" />
+		<completion string="overwrite" />
+		<completion string="overwriteData" />
+		<completion string="result" />
+		<completion string="source" />
+		<completion string="XMLdata" />
+	</set>
 	
+	<set name="com.scottmebberson.cfml.tag.cfpdfformparam.attributes">
+		<completion string="index" />
+		<completion string="name" />
+		<completion string="value" />
+	</set>
 	
+	<set name="com.scottmebberson.cfml.tag.cfpdfparam.attributes">
+		<completion string="pages" />
+		<completion string="password" />
+		<completion string="source" />
+	</set>
 	
+	<set name="com.scottmebberson.cfml.tag.cfpdfsubform.attributes">
+		<completion string="index" />
+		<completion string="name" />
+	</set>
 	
+	<set name="com.scottmebberson.cfml.tag.cfpod.attributes">
+		<completion string="bodyStyle" />
+		<completion string="headerStyle" />
+		<completion string="height" />
+		<completion string="name" />
+		<completion string="onBindError" />
+		<completion string="overflow" />
+		<completion string="source" />
+		<completion string="title" />
+		<completion string="width" />
+	</set>
 	
+	<set name="com.scottmebberson.cfml.tag.cfpop.attributes">
+		<completion string="server" />
+		<completion string="action" />
+		<completion string="attachmentPath" />
+		<completion string="debug" />
+		<completion string="generateUniqueFilenames" />
+		<completion string="maxRows" />
+		<completion string="messageNumber" />
+		<completion string="name" />
+		<completion string="password" />
+		<completion string="port" />
+		<completion string="startRow" />
+		<completion string="timeout" />
+		<completion string="uid" />
+		<completion string="username" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfpresentation.attributes">
+		<completion string="authPassword" />
+		<completion string="authUser" />
+		<completion string="autoPlay" />
+		<completion string="backgroundColor" />
+		<completion string="control" />
+		<completion string="controlLocation" />
+		<completion string="directory" />
+		<completion string="glowColor" />
+		<completion string="initialTab" />
+		<completion string="lightColor" />
+		<completion string="loop" />
+		<completion string="overwrite" />
+		<completion string="primaryColor" />
+		<completion string="proxyHost" />
+		<completion string="proxyPassword" />
+		<completion string="proxyPort" />
+		<completion string="proxyUser" />
+		<completion string="shadowColor" />
+		<completion string="showNotes" />
+		<completion string="showOutline" />
+		<completion string="showSearch" />
+		<completion string="textColor" />
+		<completion string="title" />
+		<completion string="userAgent" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfpresentationslide.attributes">
+		<completion string="advance" />
+		<completion string="audio" />
+		<completion string="authPassword" />
+		<completion string="authUser" />
+		<completion string="duration" />
+		<completion string="marginBottom" />
+		<completion string="marginLeft" />
+		<completion string="marginRight" />
+		<completion string="marginTop" />
+		<completion string="notes" />
+		<completion string="presenter" />
+		<completion string="scale" />
+		<completion string="src" />
+		<completion string="title" />
+		<completion string="userAgent" />
+		<completion string="video" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfpresenter.attributes">
+		<completion string="biography" />
+		<completion string="email" />
+		<completion string="image" />
+		<completion string="name" />
+		<completion string="logo" />
+		<completion string="title" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfprint.attributes">
+		<completion string="attributeStruct" />
+		<completion string="color" />
+		<completion string="copies" />
+		<completion string="fidelity" />
+		<completion string="pages" />
+		<completion string="paper" />
+		<completion string="password" />
+		<completion string="printer" />
+		<completion string="source" />
+		<completion string="type" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfprocessingdirective.attributes">
+		<completion string="pageEncoding" />
+		<completion string="suppressWhiteSpace" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfprocparam.attributes">
+		<completion string="CFSQLType" />
+		<completion string="maxLength" />
+		<completion string="null" />
+		<completion string="scale" />
+		<completion string="type" />
+		<completion string="value" />
+		<completion string="variable" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfprocresult.attributes">
+		<completion string="name" />
+		<completion string="maxRows" />
+		<completion string="resultSet" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfproperty.attributes">
+		<completion string="name" />
+		<completion string="default" />
+		<completion string="displayname" />
+		<completion string="hint" />
+		<completion string="required" />
+		<completion string="type" />
+	</set>
+
+
+
+
 	<!--	
 	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">
 		<completion string="XXX" />

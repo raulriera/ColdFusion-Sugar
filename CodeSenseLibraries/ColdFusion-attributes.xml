@@ -1327,6 +1327,59 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="separator" />
 	</set>
 
+	<set name="com.scottmebberson.cfml.tag.cfregistry.attributes">
+		<completion string="action" />
+		<completion string="branch" />
+		<completion string="name" />
+		<completion string="sort" />
+		<completion string="type" />
+		<completion string="entry" />
+		<completion string="variable" />
+		<completion string="value" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfreport.attributes">
+		<completion string="datasource" />
+		<completion string="encryption" />
+		<completion string="filename" />
+		<completion string="format" />
+		<completion string="formula" />
+		<completion string="name" />
+		<completion string="orderBy" />
+		<completion string="overwrite" />
+		<completion string="ownerPassword" />
+		<completion string="password" />
+		<completion string="permissions" />
+		<completion string="query" />
+		<completion string="report" />
+		<completion string="resourceTimespan" />
+		<completion string="style" />
+		<completion string="template" />
+		<completion string="timeout" />
+		<completion string="type" />
+		<completion string="userName" />
+		<completion string="userPassword" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfreportparam.attributes">
+		<completion string="chart" />
+		<completion string="name" />
+		<completion string="query" />
+		<completion string="series" />
+		<completion string="subreport" />
+		<completion string="style" />
+		<completion string="value" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfreturn.attributes">
+		<completion string="expr" />
+	</set>
+
+
+
+
+
+
 	<!--	
 	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">
 		<completion string="XXX" />

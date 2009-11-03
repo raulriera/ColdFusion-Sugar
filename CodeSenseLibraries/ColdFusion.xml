@@ -9,8 +9,7 @@ Copyright (c) 2009
 
 <codesense version="1.0">
     
-	<!-- Built In Support Function -->
-	
+	<!-- Built In Support Tags -->
 	<set name="com.scottmebberson.cfml.tags">
 	
 		<!-- Open tags -->

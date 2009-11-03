@@ -1669,6 +1669,78 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="onBindError" />
 	</set>
 
+	<set name="com.scottmebberson.cfml.tag.cfupdate.attributes">
+		<completion string="dataSource" />
+		<completion string="tableName" />
+		<completion string="formFields" />
+		<completion string="password" />
+		<completion string="tableOwner" />
+		<completion string="tableQualifier" />
+		<completion string="username" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfwddx.attributes">
+		<completion string="action" />
+		<completion string="input" />
+		<completion string="output" />
+		<completion string="topLevelVariable" />
+		<completion string="useTimeZoneInfo" />
+		<completion string="validate" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfwindow.attributes">
+		<completion string="bodyStyle" />
+		<completion string="center" />
+		<completion string="closable" />
+		<completion string="draggable" />
+		<completion string="headerStyle" />
+		<completion string="height" />
+		<completion string="initShow" />
+		<completion string="minHeight" />
+		<completion string="minWidth" />
+		<completion string="modal" />
+		<completion string="name" />
+		<completion string="onBindError " />
+		<completion string="refreshOnShow" />
+		<completion string="resizable" />
+		<completion string="source" />
+		<completion string="title" />
+		<completion string="width" />
+		<completion string="x" />
+		<completion string="y" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfxml.attributes">
+		<completion string="variable" />
+		<completion string="caseSensitive" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfzip.attributes">
+		<completion string="action" />
+		<completion string="charset" />
+		<completion string="destination" />
+		<completion string="entryPath" />
+		<completion string="file" />
+		<completion string="filter" />
+		<completion string="name" />
+		<completion string="overwrite" />
+		<completion string="prefix" />
+		<completion string="recurse" />
+		<completion string="showDirectory" />
+		<completion string="source" />
+		<completion string="storePath" />
+		<completion string="variable" />
+	</set>
+
+	<set name="com.scottmebberson.cfml.tag.cfzipparam.attributes">
+		<completion string="charset" />
+		<completion string="content" />
+		<completion string="entryPath" />
+		<completion string="filter" />
+		<completion string="prefix" />
+		<completion string="recurse" />
+		<completion string="source" />
+	</set>
 
 	<!--	
 	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">

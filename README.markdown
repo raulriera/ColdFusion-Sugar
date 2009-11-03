@@ -16,13 +16,12 @@ The ColdFusion.sugar is maintained here and is the best place to watch developme
 ## Features
 * Syntax Highlighting (thanks Jonathan!)
 * Basic code hinting for _all_ tags (ColdFusion 8, thanks Scott!)
-* Tag attribute hinting for _some_ tags (thanks Scott!)
+* Tag attribute hinting for all tags
 * Code-folding (still buggy, yet improved from Scott's version)
 
 ## To Come
 This Sugar is only VERY new. I'll be working on the following features in the days to come.
 
-* All attribute support (ColdFusion 8)
 * Better code folding
 
 I hope you enjoy it!

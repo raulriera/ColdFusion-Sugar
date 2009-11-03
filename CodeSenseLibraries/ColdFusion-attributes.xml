@@ -1302,8 +1302,30 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="type" />
 	</set>
 
+	<set name="com.scottmebberson.cfml.tag.cfquery.attributes">
+		<completion string="name" />
+		<completion string="blockFactor" />
+		<completion string="cachedAfter" />
+		<completion string="cachedWithin" />
+		<completion string="dataSource" />
+		<completion string="dbtype" />
+		<completion string="debug" />
+		<completion string="maxRows" />
+		<completion string="password" />
+		<completion string="result" />
+		<completion string="timeout" />
+		<completion string="username" />
+	</set>
 
-
+	<set name="com.scottmebberson.cfml.tag.cfqueryparam.attributes">
+		<completion string="value" />
+		<completion string="CFSQLType" />
+		<completion string="list" />
+		<completion string="maxLength" />
+		<completion string="null" />
+		<completion string="scale" />
+		<completion string="separator" />
+	</set>
 
 	<!--	
 	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">

@@ -215,9 +215,11 @@
             <zone name="source.coldfusion.embedded.cfm">
                 <starts-with>
                     <expression>#</expression>
+                    <capture number="0" name="punctuation.definition.begin"/>
                 </starts-with>
                 <ends-with>
                     <expression>\#</expression>
+                    <capture number="0" name="punctuation.definition.end"/>
                 </ends-with>
                 <subzones>
                     <include collection="embedded-code"/>

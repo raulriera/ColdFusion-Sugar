@@ -5,6 +5,12 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 
 -->
 <codesense version="1.0">
+	
+	<set name="com.scottmebberson.cfml.tag.cfargument.attribute-values.required">
+		<completion string="yes" />
+		<completion string="no" />
+	</set>
+
 	<!--
 	<set name="com.scottmebberson.cfml.tag.CFTAG.attribute-values.ATTRIBUTE">
 		<completion string="xxx" />

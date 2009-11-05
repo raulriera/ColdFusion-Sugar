@@ -157,27 +157,27 @@
         
         <!-- Arithmetic Operators -->
         <collection name="arithmetic-operator">
-            <zone name="arithmetic.operator.addition">
-            	<expression>\b\+\b</expression>
+            <zone name="arithmetic.operator">
+            	<expression>\+|\-|\*|/|\+\+|\-\-|\+=|\-=|\*=|/=|MOD|%=|% |\\|\^\b</expression>
             </zone>
-            <zone name="arithmetic.operator.subtraction">
-            	<expression>\b\-\b</expression>
-            </zone>
-            <zone name="arithmetic.operator.multiplication">
-            	<expression>\b\*\b</expression>
-            </zone>
-            <zone name="arithmetic.operator.division">
-            	<expression>\b\/\b</expression>
-            </zone>
-            <zone name="arithmetic.operator.exponentiation">
-            	<expression>\b\&#94;\b</expression>
-            </zone>
-            <zone name="arithmetic.operator.division.integer">
-            	<expression>\b\\\b</expression>
-            </zone>
-            <zone name="arithmetic.operator.modulus">
-            	<expression>\bMOD\b</expression>
-            </zone>
+			
+			<!--
+			\+
+			\-
+			\*
+			/
+			\+\+
+			\-\-
+			\+=
+			\-=
+			\*=
+			/=
+			MOD
+			%=		
+			% 
+			\\
+			\^
+			-->
         </collection> 
         
         <!-- Logical Operators -->

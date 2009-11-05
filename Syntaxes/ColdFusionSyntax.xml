@@ -118,6 +118,7 @@
         
         <include collection="coldfusion-comment"/>
         <include collection="coldfusion-script" />
+        <include collection="inline-function" />
         <!-- This enables HTML support, but seems to break CFML completion 
         <include syntax="text.html.basic"/> 
         -->
@@ -178,7 +179,6 @@
             	<expression>\bMOD\b</expression>
             </zone>
         </collection> 
-
         
         <!-- Logical Operators -->
         <collection name="logical-operator">
@@ -242,7 +242,7 @@
                 </subzones>
             </zone>
         </collection>
-        
+
         <!-- The stuff between the ## -->
 		<collection name="coldfusion-script">
             <zone name="source.coldfusion.embedded.cfm">
@@ -250,7 +250,7 @@
                     <expression>#</expression>
                 </starts-with>
                 <ends-with>
-                    <expression>#</expression>
+                    <expression>\#</expression>
                 </ends-with>
                 <subzones>
                     <include collection="embedded-code"/>
@@ -324,6 +324,13 @@
             </zone>
         </collection>
         
+        <!-- CFML Functions -->
+        <collection name="inline-function">
+	        <zone name="support.function.cfm">
+				<expression>\b(Abs|ACos|AddSOAPRequestHeader|AddSOAPResponseHeader|AjaxLink|AjaxOnLoad|ArrayAppend|ArrayAvg|ArrayClear|ArrayDeleteAt|ArrayInsertAt|ArrayIsDefined|ArrayIsEmpty|ArrayLen|ArrayMax|ArrayMin|ArraySet|ArraySort|ArrayNew|ArrayPrepend|ArrayResize|ArraySum|ArraySwap|ArrayToList|Asc|ASin|Atn|BinaryDecode|BinaryEncode|BitAnd|BitMaskClear|BitMaskRead|BitMaskSet|BitNot|BitOr|BitSHLN|BitSHRN|BitXor|Ceiling|CharsetDecode|CharsetEncode|Chr|CJustify|Compare|CompareNoCase|Cos|CreateDate|CreateDateTime|CreateObject|CreateODBCDate|CreateODBCDateTime|CreateODBCTime|CreateTime|CreateTimeSpan|CreateUUID|DateAdd|DateCompare|DateConvert|DateDiff|DateFormat|DatePart|Day|DayOfWeek|DayOfWeekAsString|DayOfYear|DaysInMonth|DaysInYear|DE|DecimalFormat|DecrementValue|Decrypt|DecryptBinary|DeleteClientVariable|DeserializeJSON|DirectoryExists|DollarFormat|DotNetToCFType|Duplicate|Encrypt|EncryptBinary|Evaluate|Exp|ExpandPath|FileClose|FileCopy|FileDelete|FileExists|FileIsEOF|FileMove|FileOpen|FileRead|FileReadBinary|FileReadLine|FileSetAccessMode|FileSetAttribute|FileSetLastModified|FileWrite|Find|FindNoCase|FindOneOf|FirstDayOfMonth|Fix|FormatBaseN|GenerateSecretKey|GetAuthUser|GetBaseTagData|GetBaseTagList|GetBaseTemplatePath|GetClientVariablesList|GetComponentMetaData|GetContextRoot|GetCurrentTemplatePath|GetDirectoryFromPath|GetEncoding|GetException|GetFileFromPath|GetFileInfo|GetFunctionList|GetGatewayHelper|GetHttpRequestData|GetHttpTimeString|GetK2ServerDocCount|GetK2ServerDocCountLimit|GetLocale|GetLocaleDisplayName|GetLocalHostIP|GetMetaData|GetMetricData|GetPageContext|GetPrinterInfo|GetProfileSections|GetProfileString|GetReadableImageFormats|GetSOAPRequest|GetSOAPRequestHeader|GetSOAPResponse|GetSOAPResponseHeader|GetTempDirectory|GetTempFile|GetTemplatePath|GetTickCount|GetTimeZoneInfo|GetToken|GetUserRoles|GetWriteableImageFormats|Hash|Hour|HTMLCodeFormat|HTMLEditFormat|IIf|ImageAddBorder|ImageBlur|ImageClearRect|ImageCopy|ImageCrop|ImageDrawArc|ImageDrawBeveledRect|ImageDrawCubicCurve|ImageDrawLine|ImageDrawLines|ImageDrawOval|ImageDrawPoint|ImageDrawQuadraticCurve|ImageDrawRect|ImageDrawRoundRect|ImageDrawText|ImageFlip|ImageGetBlob|ImageGetBufferedImage|ImageGetEXIFTag|ImageGetHeight|ImageGetIPTCTag|ImageGetWidth|ImageGrayscale|ImageInfo|ImageNegative|ImageNew|ImageOverlay|ImagePaste|ImageRead|ImageReadBase64|ImageResize|ImageRotate|ImageRotateDrawingAxis|ImageScaleToFit|ImageSetAntialiasing|ImageSetBackgroundColor|ImageSetDrawingColor|ImageSetDrawingStroke|ImageSetDrawingTransparency|ImageSharpen|ImageShear|ImageShearDrawingAxis|ImageTranslate|ImageTranslateDrawingAxis|ImageWrite|ImageWriteBase64|ImageXORDrawingMode|IncrementValue|InputBaseN|Insert|Int|IsArray|IsBinary|IsBoolean|IsCustomFunction|IsDate|IsDDX|IsDebugMode|IsDefined|IsImage|IsImageFile|IsInstanceOf|IsJSON|IsLeapYear|IsLocalHost|IsNumeric|IsNumericDate|IsObject|IsPDFFile|IsPDFObject|IsQuery|IsSimpleValue|IsSOAPRequest|IsStruct|IsUserInAnyRole|IsUserInRole|IsUserLoggedIn|IsValid|IsWDDX|IsXML|IsXmlAttribute|IsXmlDoc|IsXmlElem|IsXmlNode|IsXmlRoot|JavaCast|JSStringFormat|LCase|Left|Len|ListAppend|ListChangeDelims|ListContains|ListContainsNoCase|ListDeleteAt|ListFind|ListFindNoCase|ListFirst|ListGetAt|ListInsertAt|ListLast|ListLen|ListPrepend|ListQualify|ListRest|ListSetAt|ListSort|ListToArray|ListValueCount|ListValueCountNoCase|LJustify|Log|Log10|LSCurrencyFormat|LSDateFormat|LSEuroCurrencyFormat|LSIsCurrency|LSIsDate|LSIsNumeric|LSNumberFormat|LSParseCurrency|LSParseDateTime|LSParseEuroCurrency|LSParseNumber|LSTimeFormat|LTrim|Max|Mid|Min|Minute|Month|MonthAsString|Now|NumberFormat|ParagraphFormat|ParseDateTime|Pi|PrecisionEvaluate|PreserveSingleQuotes|Quarter|QueryAddColumn|QueryAddRow|QueryConvertForGrid|QueryNew|QuerySetCell|QuotedValueList|Rand|Randomize|RandRange|REFind|REFindNoCase|ReleaseComObject|REMatch|REMatchNoCase|RemoveChars|RepeatString|Replace|ReplaceList|ReplaceNoCase|REReplace|REReplaceNoCase|Reverse|Right|RJustify|Round|RTrim|Second|SendGatewayMessage|SerializeJSON|SetEncoding|SetLocale|SetProfileString|SetVariable|Sgn|Sin|Sleep|SpanExcluding|SpanIncluding|Sqr|StripCR|StructAppend|StructClear|StructCopy|StructCount|StructDelete|StructFind|StructFindKey|StructFindValue|StructGet|StructInsert|StructIsEmpty|StructKeyArray|StructKeyExists|StructKeyList|StructNew|StructSort|StructUpdate|Tan|TimeFormat|ToBase64|ToBinary|ToScript|ToString|Trim|UCase|URLDecode|URLEncodedFormat|URLSessionFormat|Val|ValueList|VerifyClient|Week|Wrap|WriteOutput|XmlChildPos|XmlElemNew|XmlFormat|XmlGetNodeType|XmlNew|XmlParse|XmlSearch|XmlTransform|XmlValidate|Year|YesNoFormat)\b</expression>
+			</zone>
+		</collection>
+        
         <!-- Other tag stuff -->
         <collection name="tag-stuff">
             <include collection="tag-id-attribute" />
@@ -334,7 +341,7 @@
             <include collection="literal-keyword" />
             <include collection="logical-operator" />
             <include collection="arithmetic-operator" />
-            
+            <include collection="inline-function" />    
         </collection>      
             
     </library>

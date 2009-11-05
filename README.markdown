@@ -14,14 +14,19 @@
 The ColdFusion.sugar is maintained here and is the best place to watch development and get the latest versions of the Sugar.
 
 ## Features
-* Syntax Highlighting (thanks Jonathan!)
-* Basic code hinting for _all_ tags (ColdFusion 8, thanks Scott!)
 * Tag attribute hinting for all tags
+* Syntax Highlighting for _all_ CFML functions (ColdFusion 8)
+* Basic Syntax Highlighting (thanks Jonathan!)
+* Basic code hinting for _all_ tags (ColdFusion 8, thanks Scott!)
 * Code-folding (still buggy, yet improved from Scott's version)
 
 ## To Come
 This Sugar is only VERY new. I'll be working on the following features in the days to come.
 
 * Better code folding
+* Better syntax highlighting
 
-I hope you enjoy it!
+## Wishlist
+
+* CFML functions code hinting
+* CFML functions attributes code hinting

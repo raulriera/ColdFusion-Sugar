@@ -156,51 +156,18 @@
         </collection>
         
         <!-- Arithmetic Operators -->
-        <collection name="arithmetic-operator">
+        <collection name="coldfusion-operators">
             <zone name="arithmetic.operator">
             	<expression>\+|\-|\*|/|\+\+|\-\-|\+=|\-=|\*=|/=|MOD|%=|% |\\|\^\b</expression>
             </zone>
-			
-			<!--
-			\+
-			\-
-			\*
-			/
-			\+\+
-			\-\-
-			\+=
-			\-=
-			\*=
-			/=
-			MOD
-			%=		
-			% 
-			\\
-			\^
-			-->
+            <zone name="logical.operator">
+				<expression>\b(NOT|AND|OR|XOR|EQV|IMP|!|&amp;&amp;|\|\||)\b</expression>
+            </zone>
+            <zone name="decision.operator">
+				<expression>\b(IS|EQUAL|EQ|IS NOT|NOT EQUAL|NEQ|CONTAINS|DOES NOT CONTAIN|GREATER THAN|GT|LESS THAN|LT|GREATER THAN OR EQUAL TO|GTE|GE|LESS THAN OR EQUAL TO|LTE|LE)\b</expression>
+            </zone>
+            <!-- Missing string operators (because they are & and &= -->
         </collection> 
-        
-        <!-- Logical Operators -->
-        <collection name="logical-operator">
-            <zone name="logical.operator.not">
-            	<expression>\bNOT\b</expression>
-            </zone>
-            <zone name="logical.operator.and">
-            	<expression>\bAND\b</expression>
-            </zone>
-            <zone name="logical.operator.or">
-            	<expression>\bOR\b</expression>
-            </zone>
-            <zone name="logical.operator.xor">
-            	<expression>\bXOR\b</expression>
-            </zone>
-            <zone name="logical.operator.eqv">
-            	<expression>\bEQV\b</expression>
-            </zone>
-            <zone name="logical.operator.imp">
-            	<expression>\bIMP\b</expression>
-            </zone>
-        </collection>
         
         <collection name="entities">
             <zone name="constant.character.entity.html">
@@ -339,8 +306,7 @@
             <include collection="string-single-quoted" />
             <include collection="embedded-code" />
             <include collection="literal-keyword" />
-            <include collection="logical-operator" />
-            <include collection="arithmetic-operator" />
+            <include collection="coldfusion-operators" />
             <include collection="inline-function" />    
         </collection>      
             

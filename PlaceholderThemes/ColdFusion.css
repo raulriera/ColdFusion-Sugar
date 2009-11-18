@@ -1,0 +1,23 @@
+/*
+	@theme ColdFusion Placeholder
+	@placeholder cfm
+*/
+
+@base {
+	color: #333;
+	background-color: #fff;
+}
+
+/*cfm>tag>name {
+	color: #00ff00;
+	background-color: #d6df6d;
+}*/
+
+literal.keyword {
+	color: #0000ff;
+}
+
+source.coldfusion {
+	color: #4e00b1;
+	background-color: #f5d6ff;
+}

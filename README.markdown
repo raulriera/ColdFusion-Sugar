@@ -23,6 +23,7 @@ The ColdFusion.sugar is maintained here and is the best place to watch developme
 ## To Come
 This Sugar is only VERY new. I'll be working on the following features in the days to come.
 
+* CFML theme colors
 * Better code folding
 * Better syntax highlighting
 

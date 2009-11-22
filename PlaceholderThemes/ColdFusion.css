@@ -1,6 +1,6 @@
 /*
 	@theme ColdFusion Placeholder
-	@placeholder cfm
+	@placeholder coldfusion
 */
 
 @base {
@@ -8,16 +8,18 @@
 	background-color: #fff;
 }
 
-/*cfm>tag>name {
-	color: #00ff00;
-	background-color: #d6df6d;
-}*/
+cfm>tag>name {
+
+}
 
 literal.keyword {
 	color: #0000ff;
 }
 
 source.coldfusion {
-	color: #4e00b1;
-	background-color: #f5d6ff;
+
+}
+
+support.function.cfm {
+
 }

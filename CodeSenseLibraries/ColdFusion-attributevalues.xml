@@ -10,7 +10,26 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="yes" />
 		<completion string="no" />
 	</set>
-
+	
+	<set name="com.scottmebberson.cfml.tag.cfargument.attribute-values.type">
+		<completion string="any" />
+		<completion string="array" />
+		<completion string="binary" />
+		<completion string="radio" />
+		<completion string="boolean" />
+		<completion string="component" />
+		<completion string="date" />
+		<completion string="guid" />
+		<completion string="numeric" />
+		<completion string="query" />
+		<completion string="string" />
+		<completion string="struct" />
+		<completion string="uuid" />
+		<completion string="variableName" />
+		<completion string="xml" />
+		<completion string="componentName" />
+	</set>
+	
 	<!--
 	<set name="com.scottmebberson.cfml.tag.CFTAG.attribute-values.ATTRIBUTE">
 		<completion string="xxx" />

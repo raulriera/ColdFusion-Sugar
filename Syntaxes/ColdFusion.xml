@@ -38,7 +38,7 @@
                 <capture number="1" name="entity.name.tag.cfquery.cfm"/>
             </ends-with>
             <subzones>
-                <include collection="tag-stuff"/>
+            	<include collection="tag-stuff"/>
                 <zone name="source.sql.embedded">
                     <starts-with>
                         <expression>(?&lt;=>)</expression>
@@ -47,7 +47,7 @@
                         <expression>(?=&lt;/(?i:cfquery))</expression>
                     </ends-with>
                     <subzones>
-                        <include syntax="sourcecode.sql"/>
+                        <include syntax="sourcecode.sql"/>                      
                     </subzones>
                 </zone>
             </subzones>
@@ -120,9 +120,9 @@
         <include collection="coldfusion-comment"/>
         <include collection="coldfusion-script" />
         <include collection="coldfusion-functions" />
-        <!-- This enables HTML support, but seems to break CFML completion 
+        <!--This enables HTML support -->
         <include syntax="text.html.basic"/> 
-        -->
+        
         
     </zones>
     

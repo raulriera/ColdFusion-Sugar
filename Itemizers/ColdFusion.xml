@@ -14,7 +14,7 @@
 		</subrecipes>
 	</recipe-->
 
-	<recipe name="built-in.html.tag.collection">
+	<recipe name="built-in.cfm.tag.collection">
 		<start-selector>meta.tag.open.cfm:has-child(name:capture(name))</start-selector>
 		<end-selector>meta.tag.close.cfm:has-child(name[text == $name.text])</end-selector>
 		<subrecipes>
@@ -27,8 +27,5 @@
 		<selector>meta.tag.open.cfm:has-child(name:capture(name), empty-element-marker), meta.tag.self-closing.cfm:has-child(name:capture(name)), meta.tag.open.cfm:has-child(name:capture(name), self-closing)</selector>
 		<class>ESXHTMLItem</class>
 	</recipe>
-
-	<library>
-	</library>
 	
 </itemizer>

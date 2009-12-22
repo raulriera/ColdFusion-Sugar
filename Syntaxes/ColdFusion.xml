@@ -55,7 +55,7 @@
 
 		<zone name="meta.tag.self-closing.cfm">
 			<starts-with>
-				<expression>(&lt;)((?i:cf)(abort|else|set|argument|directory|file|return|input|queryparam))</expression>
+				<expression>(&lt;)((?i:cf)(abort|else|set|argument|directory|file|return|input|param|queryparam))</expression>
 				<capture number="1" name="punctuation.definition.begin"/>
 				<capture number="2" name="entity.name.tag.cfm"/>
 			</starts-with>

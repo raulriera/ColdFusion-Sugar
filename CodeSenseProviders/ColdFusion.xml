@@ -34,6 +34,6 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 	<provider>
 		<selector>support.function.cfm</selector>
 		<completions>com.scottmebberson.cfml.functions</completions>
-		<complete-match capture="2">[a-zA-Z0-9_\.]+\(</complete-match>
+		<complete-match capture="1">([a-zA-Z_$]\w*)</complete-match>
 	</provider> -->
 </codesense>

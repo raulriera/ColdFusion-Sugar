@@ -3,23 +3,30 @@
 	@placeholder coldfusion
 */
 
-@base {
+cfm.tag, cfm.tag > attribute-name {
+	color: #B19BBD;
+}
+
+cfm.tag > name {
+	color:  #7a3e9d;
+}
+
+cfm operator, cfm keyword {
+	color: #AB6526;
+}
+
+cfml.embedded output {
 	color: #333;
-	background-color: #fff;
 }
 
-cfm>tag>name {
-	
+cfml.embedded coldfusion.embedded {
+	color: #AB6526;
 }
 
-literal.keyword {
-	color: #0000ff;
+cfm.function method.name {
+	color:  #AA3731;
 }
 
-source.coldfusion {
-
-}
-
-support.function.cfm {
-
+cfm.function > parenthesis {
+	color: #AB6526;
 }

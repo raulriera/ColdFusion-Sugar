@@ -6,6 +6,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 -->
 <codesense version="1.0">
 	
+	<!-- cfargument -->
 	<set name="com.scottmebberson.cfml.tag.cfargument.attribute-values.required">
 		<completion string="yes" />
 		<completion string="no" />
@@ -28,6 +29,14 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="variableName" />
 		<completion string="xml" />
 		<completion string="componentName" />
+	</set>
+	
+	<!-- cffunction -->
+	<set name="com.scottmebberson.cfml.tag.cffunction.attribute-values.access">
+		<completion string="private" />
+		<completion string="package" />
+		<completion string="public" />
+		<completion string="remote" />
 	</set>
 	
 	<!--

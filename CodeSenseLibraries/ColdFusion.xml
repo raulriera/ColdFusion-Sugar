@@ -18,7 +18,7 @@ Copyright (c) 2009
 				<matched-suffix>(\scf*:)|[^:]</matched-suffix>
 				<transform-into>(?1::>$0&lt;/${completion}>)</transform-into>
 			</append-dynamic>
-		</behavior>
+		</behavior> 
 	    
 	    <completion string="cfquery">
 	        <behavior>
@@ -66,13 +66,94 @@ Copyright (c) 2009
 			</behavior>
 		</completion>
 		
+		<completion string="cfargument">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: name="$1" $2/>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string="cfparam">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: name="$1" $2/>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string="cfdirectory">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: action="$1" directory="$2" $3/>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string="cffile">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: action="$1" $2/>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string="cfreturn">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: ${1:variableName} $2/>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string="cfinput">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: name="$1" $2/>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string="cfinclude">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: template="$1" $2/>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string="cfqueryparam">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: value="$1" CFSQLType="$2" $3/>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		<completion string="cfbreak">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: $1/>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		
+		
+		<!-- Other tags -->
 		<completion string="cfajaximport" />
 		<completion string="cfajaxproxy" />
 		<completion string="cfapplet" />
 		<completion string="cfapplication" />
-		<completion string="cfargument" />
 		<completion string="cfassociate" />
-		<completion string="cfbreak" />
 		<completion string="cfcache" />
 		<completion string="cfcalendar" />
 		<completion string="cfcase" />
@@ -87,7 +168,6 @@ Copyright (c) 2009
 		<completion string="cfcookie" />
 		<completion string="cfdbinfo" />
 		<completion string="cfdefaultcase" />
-		<completion string="cfdirectory" />
 		<completion string="cfdiv" />
 		<completion string="cfdocument" />
 		<completion string="cfdocumentitem" />
@@ -103,7 +183,6 @@ Copyright (c) 2009
 		<completion string="cfexecute" />
 		<completion string="cfexit" />
 		<completion string="cffeed" />
-		<completion string="cffile" />
 		<completion string="cfflush" />
 		<completion string="cfform" />
 		<completion string="cfformgroup" />
@@ -121,9 +200,7 @@ Copyright (c) 2009
 		<completion string="cfif" />
 		<completion string="cfimage" />
 		<completion string="cfimport" />
-		<completion string="cfinclude" />
 		<completion string="cfindex" />
-		<completion string="cfinput" />
 		<completion string="cfinsert" />
 		<completion string="cfinterface" />
 		<completion string="cfinvoke" />
@@ -147,7 +224,6 @@ Copyright (c) 2009
 		<completion string="cfobject" />
 		<completion string="cfobjectcache" />
 		<completion string="cfoutput" />
-		<completion string="cfparam" />
 		<completion string="cfpdf" />
 		<completion string="cfpdfform" />
 		<completion string="cfpdfformparam" />
@@ -163,12 +239,10 @@ Copyright (c) 2009
 		<completion string="cfprocparam" />
 		<completion string="cfprocresult" />
 		<completion string="cfproperty" />
-		<completion string="cfqueryparam" />
 		<completion string="cfregistry" />
 		<completion string="cfreport" />
 		<completion string="cfreportparam" />
 		<completion string="cfrethrow" />
-		<completion string="cfreturn" />
 		<completion string="cfsavecontent" />
 		<completion string="cfschedule" />
 		<completion string="cfscript" />

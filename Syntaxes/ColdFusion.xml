@@ -10,7 +10,7 @@
             <ends-with>
                 <expression>&lt;/((?i:cfoutput))>(?:\s*\n)?</expression>
                 <capture number="1" name="entity.name.tag.cfoutput.cfm"/>
-            </ends-with>
+            </ends-with>            
             <subzones>
                 <include collection="tag-stuff"/>
                 <zone name="source.cfml.embedded">
@@ -19,10 +19,16 @@
                     </starts-with>
                     <ends-with>
                         <expression>(?=&lt;/(?i:cfoutput))</expression>
-                    </ends-with>
-                    <subzones name="meta.scope.output.cfm">
-                        <include syntax="$self"/>
+                    </ends-with>              
+                    <subzones name="meta.scope.output.cfm">       	
+                    	<include collection="tag-stuff"/>            	
+                    	<include syntax="text.html.basic"/>
                     </subzones>
+                    
+                    <!-- this is what it was before
+                    <subzones name="meta.scope.output.cfm">
+                       	 <include syntax="$self"/> 
+                    </subzones> -->
                 </zone>
             </subzones>
         </zone>
@@ -47,15 +53,16 @@
                         <expression>(?=&lt;/(?i:cfquery))</expression>
                     </ends-with>
                     <subzones>
-                        <include syntax="sourcecode.sql"/>                      
+                        <include syntax="sourcecode.sql"/>                    
                     </subzones>
                 </zone>
             </subzones>
         </zone>
-
+		
+		<!-- CFML self closing tags -->
 		<zone name="meta.tag.self-closing.cfm">
 			<starts-with>
-				<expression>(&lt;)((?i:cf)(abort|else|set|argument|directory|file|return|input|param|queryparam))</expression>
+				<expression>(&lt;)((?i:cf)(abort|break|else|set|argument|directory|file|return|input|include|param|queryparam))</expression>
 				<capture number="1" name="punctuation.definition.begin"/>
 				<capture number="2" name="entity.name.tag.cfm"/>
 			</starts-with>
@@ -120,6 +127,7 @@
         <include collection="coldfusion-comment"/>
         <include collection="coldfusion-script" />
         <include collection="coldfusion-functions" />
+        
         <!--This enables HTML support -->
         <include syntax="text.html.basic"/> 
         
@@ -158,14 +166,14 @@
         
         <!-- Arithmetic Operators -->
         <collection name="coldfusion-operators">
-            <zone name="arithmetic.operator">
+            <zone name="operator.mathematical">
             	<expression>\+|\-|\*|/|\+\+|\-\-|\+=|\-=|\*=|/=|MOD|%=|% |\\|\^\b</expression>
             </zone>
-            <zone name="logical.operator">
+            <zone name="operator.logical">
             	<!-- Missing the ||, && and ! operator -->
 				<expression>\b(NOT|AND|OR|XOR|EQV|IMP)\b</expression>
             </zone>
-            <zone name="decision.operator">
+            <zone name="operator.comparator">
 				<expression>\b(IS|EQUAL|EQ|IS NOT|NOT EQUAL|NEQ|CONTAINS|DOES NOT CONTAIN|GREATER THAN|GT|LESS THAN|LT|GREATER THAN OR EQUAL TO|GTE|GE|LESS THAN OR EQUAL TO|LTE|LE)\b</expression>
             </zone>
             <!-- Missing string operators (because they are & and &= -->
@@ -180,38 +188,6 @@
             </zone>
         </collection>
         
-        <!-- Strings double quoted -->
-        <collection name="string-double-quoted">
-            <zone name="string.quoted.double.cfm">
-                <starts-with>
-                    <expression>"</expression>
-                </starts-with>
-                <ends-with>
-                    <expression>"</expression>
-                </ends-with>
-                <subzones>
-                    <include collection="embedded-code"/>
-                    <include collection="entities"/>
-                </subzones>
-            </zone>
-        </collection>
-        
-        <!-- Strings single quoted -->
-        <collection name="string-single-quoted">
-            <zone name="string.quoted.single.cfm">
-                <starts-with>
-                    <expression>'</expression>
-                </starts-with>
-                <ends-with>
-                    <expression>'</expression>
-                </ends-with>
-                <subzones>
-                    <include collection="embedded-code"/>
-                    <include collection="entities"/>
-                </subzones>
-            </zone>
-        </collection>
-
         <!-- The stuff between the ## -->
 		<collection name="coldfusion-script">
             <zone name="source.coldfusion.embedded.cfm">
@@ -294,6 +270,38 @@
                 </subzones>
             </zone>
         </collection>
+        
+        <!-- Strings double quoted -->
+        <collection name="string-double-quoted">
+            <zone name="string.quoted.double.cfm">
+                <starts-with>
+                    <expression>"</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>"</expression>
+                </ends-with>
+                <subzones>
+                    <include collection="embedded-code"/>
+                    <include collection="entities"/>
+                </subzones>
+            </zone>
+        </collection> 
+        
+        <!-- Strings single quoted -->
+        <collection name="string-single-quoted">
+            <zone name="string.quoted.single.cfm">
+                <starts-with>
+                    <expression>'</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>'</expression>
+                </ends-with>
+                <subzones>
+                    <include collection="embedded-code"/>
+                    <include collection="entities"/>
+                </subzones>
+            </zone>
+        </collection> 
         
         <!-- CFML Functions -->
         <collection name="coldfusion-functions">

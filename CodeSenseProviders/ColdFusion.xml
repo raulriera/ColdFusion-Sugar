@@ -26,8 +26,8 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 	<provider>
 		<selector>meta.tag.open.cfm:has-child(name:capture(tag)) > attribute-name:capture(attribute) + string > punctuation.end, meta.tag.self-closing.cfm:has-child(name:capture(tag)) > attribute-name:capture(attribute) + string > punctuation.end</selector>
 		<completions>com.scottmebberson.cfml.tag.${tag}.attribute-values.${attribute}</completions>
-		<complete-match capture="2">(\"|\'|)([a-zA-Z0-9-]*)</complete-match>
-		<!--require-suffix>(\s|>|^)</require-suffix-->
+		<complete-match capture="2">(\"|\')([a-zA-Z0-9-]*)</complete-match>
+		<require-suffix>(\"|\')</require-suffix>
 	</provider>
 	
 	<!-- ColdFusion functions 

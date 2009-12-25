@@ -23,10 +23,10 @@ cfml.embedded coldfusion.embedded {
 	color: #AB6526;
 }
 
-cfm.function method.name {
+function.cfm > method {
 	color:  #AA3731;
 }
 
-cfm.function > parenthesis {
+function.cfm > parenthesis {
 	color: #AB6526;
 }

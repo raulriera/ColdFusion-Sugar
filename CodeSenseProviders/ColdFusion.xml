@@ -30,10 +30,10 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 		<require-suffix>(\"|\')</require-suffix>
 	</provider>
 	
-	<!-- ColdFusion functions 
+	<!-- ColdFusion functions -->
 	<provider>
-		<selector>support.function.cfm</selector>
+		<selector>sourcecode.cfm - *, meta.tag.cfoutput.cfm, meta.tag.cfquery.cfm, meta.tag.self-closing.cfm, meta.tag.open.other.cfm</selector>
 		<completions>com.scottmebberson.cfml.functions</completions>
 		<complete-match capture="1">([a-zA-Z_$]\w*)</complete-match>
-	</provider> -->
+	</provider> 
 </codesense>

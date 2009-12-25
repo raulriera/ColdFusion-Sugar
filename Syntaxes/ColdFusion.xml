@@ -229,7 +229,7 @@
                 <capture number="2" name="punctuation.separator.attribute"/>
                 <capture number="3" name="punctuation.separator.namespace"/>
             </zone>
-            <include collection="strings"/>
+            <!--<include collection="strings"/>-->
         </collection>
         
         <collection name="tag-id-attribute">

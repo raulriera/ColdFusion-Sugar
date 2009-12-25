@@ -275,6 +275,14 @@ Copyright (c) 2009
     
     <!-- Built in Support Functions -->
     <set name="com.scottmebberson.cfml.functions">
+		
+		<behavior>
+			<append-dynamic>
+				<matched-suffix>(\scf*:)|[^:]</matched-suffix>
+				<transform-into>\(\)</transform-into>
+			</append-dynamic>
+		</behavior>
+		
 		<completion string="Abs" />
 		<completion string="ACos" />
 		<completion string="AddSOAPRequestHeader" />

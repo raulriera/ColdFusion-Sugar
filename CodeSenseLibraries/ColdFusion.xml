@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 @description Defines ColdFusion codesense library
-@author Scott Mebberson <scott@scottmebberson.com>
+@author Raul Riera <rieraraul@gmail.com>
 @copyright The MIT License
 
 Copyright (c) 2009
@@ -9,7 +9,7 @@ Copyright (c) 2009
 
 <codesense version="1.0">
       
-	<!-- Built In Support Tags -->
+	<!-- Built In CF8 Tags -->
 	<set name="com.scottmebberson.cfml.tags">
 	
 		<!-- Open tags -->
@@ -20,6 +20,132 @@ Copyright (c) 2009
 			</append-dynamic>
 		</behavior> 
 	    
+	    <completion string="cfabort">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1:: ${1:showError="$2" }$3/>$0)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
+	    <completion string="cfargument">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1:: name="$1" $2/>$0)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
+	    <completion string="cfbreak">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1:: $1/>$0)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
+	    <completion string="cfdirectory">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1:: action="$1" directory="$2" $3/>$0)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
+	    <completion string="cfdump">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1:: var="$1" $2/>$0)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
+	    <completion string="cfelse">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1::${1: }$2>$0)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
+	    <completion string="cfelseif">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1::${1: }$2>$0)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
+	    <completion string="cfexit">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1:: $1/>$0)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
+	    <completion string="cffile">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1:: action="$1" $2/>$0)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
+	    <completion string="cffunction">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1:: name="$1" ${2:access="$3"}> $0&lt;/cffunction>)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
+	    <completion string="cfinclude">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1:: template="$1" $2/>$0)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
+	    <completion string="cfinput">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1:: name="$1" $2/>$0)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
+	    <completion string="cfloop">
+	        <behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1:: index="$1" from="$2" to="$3" step="$4" query="$5">$0&lt;/cfloop>)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
+	    <completion string="cfparam">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1:: name="$1" $2/>$0)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
+	    </completion>
+	    
 	    <completion string="cfquery">
 	        <behavior>
 				<append-dynamic>
@@ -29,30 +155,20 @@ Copyright (c) 2009
 			</behavior>
 	    </completion>
 	    
-	    <completion string="cfloop">
-	        <behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: index="$1" from="$2" to="$3" step="$4" query="$5">$0&lt;/cfloop>)</transform-into>
-				</append-dynamic>
-			</behavior>
+	    <completion string="cfqueryparam">
+	    	<behavior>
+	    		<append-dynamic>
+	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
+	    			<transform-into>(?1:: value="$1" CFSQLType="$2" $3/>$0)</transform-into>
+	    		</append-dynamic>
+	    	</behavior>
 	    </completion>
 	    
-		<!-- Self closing tags -->
-		<completion string="cfelse">
+		<completion string="cfreturn">
 			<behavior>
 				<append-dynamic>
 					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1::${1: }$2>$0)</transform-into>
-				</append-dynamic>
-			</behavior>
-		</completion>
-		
-		<completion string="cfabort">
-			<behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: ${1:showError="$2" }$3/>$0)</transform-into>
+					<transform-into>(?1:: ${1:variableName} $2/>$0)</transform-into>
 				</append-dynamic>
 			</behavior>
 		</completion>
@@ -66,89 +182,6 @@ Copyright (c) 2009
 			</behavior>
 		</completion>
 		
-		<completion string="cfargument">
-			<behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: name="$1" $2/>$0)</transform-into>
-				</append-dynamic>
-			</behavior>
-		</completion>
-		
-		<completion string="cfparam">
-			<behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: name="$1" $2/>$0)</transform-into>
-				</append-dynamic>
-			</behavior>
-		</completion>
-		
-		<completion string="cfdirectory">
-			<behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: action="$1" directory="$2" $3/>$0)</transform-into>
-				</append-dynamic>
-			</behavior>
-		</completion>
-		
-		<completion string="cffile">
-			<behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: action="$1" $2/>$0)</transform-into>
-				</append-dynamic>
-			</behavior>
-		</completion>
-		
-		<completion string="cfreturn">
-			<behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: ${1:variableName} $2/>$0)</transform-into>
-				</append-dynamic>
-			</behavior>
-		</completion>
-		
-		<completion string="cfinput">
-			<behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: name="$1" $2/>$0)</transform-into>
-				</append-dynamic>
-			</behavior>
-		</completion>
-		
-		<completion string="cfinclude">
-			<behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: template="$1" $2/>$0)</transform-into>
-				</append-dynamic>
-			</behavior>
-		</completion>
-		
-		<completion string="cfqueryparam">
-			<behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: value="$1" CFSQLType="$2" $3/>$0)</transform-into>
-				</append-dynamic>
-			</behavior>
-		</completion>
-		
-		<completion string="cfbreak">
-			<behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: $1/>$0)</transform-into>
-				</append-dynamic>
-			</behavior>
-		</completion>
-		
-		
-		<!-- Other tags -->
 		<completion string="cfajaximport" />
 		<completion string="cfajaxproxy" />
 		<completion string="cfapplet" />
@@ -172,8 +205,6 @@ Copyright (c) 2009
 		<completion string="cfdocument" />
 		<completion string="cfdocumentitem" />
 		<completion string="cfdocumentsection" />
-		<completion string="cfdump" />
-		<completion string="cfelseif" />
 		<completion string="cferror" />
 		<completion string="cfexchangecalendar" />
 		<completion string="cfexchangeconnection" />
@@ -181,14 +212,12 @@ Copyright (c) 2009
 		<completion string="cfexchangemail" />
 		<completion string="cfexchangetask" />
 		<completion string="cfexecute" />
-		<completion string="cfexit" />
 		<completion string="cffeed" />
 		<completion string="cfflush" />
 		<completion string="cfform" />
 		<completion string="cfformgroup" />
 		<completion string="cfformitem" />
 		<completion string="cfftp" />
-		<completion string="cffunction" />
 		<completion string="cfgrid" />
 		<completion string="cfgridcolumn" />
 		<completion string="cfgridrow" />
@@ -273,7 +302,7 @@ Copyright (c) 2009
 		<completion string="cfzipparam" />
     </set>
     
-    <!-- Built in Support Functions -->
+    <!-- Built in CF9 Functions -->
     <set name="com.scottmebberson.cfml.functions">
 		
 		<behavior>
@@ -660,6 +689,5 @@ Copyright (c) 2009
 		<completion string="Year" />
 		<completion string="YesNoFormat" />
     </set>
-  
-	
+  	
 </codesense>

@@ -28,4 +28,14 @@
 		<class>ESXHTMLItem</class>
 	</recipe>
 	
+	<!--
+	<recipe name="built-in.coldfusion-functions">
+		<start-selector>support.function.cfm:has-child(name:capture(name)):capture(itemizer-firstused), delimiter.balanced.parenthesis.begin</start-selector>
+		<end-selector>delimiter.balanced.parenthesis.end</end-selector>
+		<subrecipes>
+			<include-root-recipes/>
+		</subrecipes>
+	</recipe>
+	-->
+	
 </itemizer>

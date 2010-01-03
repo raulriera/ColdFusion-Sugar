@@ -7,12 +7,12 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 <codesense version="1.0">
 	
 	<!-- cfargument -->
-	<set name="com.scottmebberson.cfml.tag.cfargument.attribute-values.required">
+	<set name="com.adobe.cfml.tag.cfargument.attribute-values.required">
 		<completion string="yes" />
 		<completion string="no" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfargument.attribute-values.type">
+	<set name="com.adobe.cfml.tag.cfargument.attribute-values.type">
 		<completion string="any" />
 		<completion string="array" />
 		<completion string="binary" />
@@ -32,7 +32,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 	</set>
 	
 	<!-- cffunction -->
-	<set name="com.scottmebberson.cfml.tag.cffunction.attribute-values.access">
+	<set name="com.adobe.cfml.tag.cffunction.attribute-values.access">
 		<completion string="private" />
 		<completion string="package" />
 		<completion string="public" />
@@ -40,7 +40,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 	</set>
 	
 	<!--
-	<set name="com.scottmebberson.cfml.tag.CFTAG.attribute-values.ATTRIBUTE">
+	<set name="com.adobe.cfml.tag.CFTAG.attribute-values.ATTRIBUTE">
 		<completion string="xxx" />
 		<completion string="yyy" />
 	</set>

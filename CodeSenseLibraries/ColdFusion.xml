@@ -10,7 +10,7 @@ Copyright (c) 2009
 <codesense version="1.0">
       
 	<!-- Built In CF8 Tags -->
-	<set name="com.scottmebberson.cfml.tags">
+	<set name="com.adobe.cfml.tags">
 	
 		<!-- Open tags -->
 		<behavior>
@@ -24,7 +24,7 @@ Copyright (c) 2009
 	    	<behavior>
 	    		<append-dynamic>
 	    			<matched-suffix>(\s*:)|[^:]</matched-suffix>
-	    			<transform-into>(?1:: ${1:showError="$2" }$3/>$0)</transform-into>
+	    			<transform-into>(?1:: />$0)</transform-into>
 	    		</append-dynamic>
 	    	</behavior>
 	    </completion>
@@ -82,7 +82,7 @@ Copyright (c) 2009
 	    		</append-dynamic>
 	    	</behavior>
 	    </completion>
-	    
+	     
 	    <completion string="cfexit">
 	    	<behavior>
 	    		<append-dynamic>
@@ -302,8 +302,8 @@ Copyright (c) 2009
 		<completion string="cfzipparam" />
     </set>
     
-    <!-- Built in CF9 Functions -->
-    <set name="com.scottmebberson.cfml.functions">
+    <!-- Built in CF8 Functions -->
+    <set name="com.adobe.cfml.functions">
 		
 		<behavior>
 			<append-dynamic>

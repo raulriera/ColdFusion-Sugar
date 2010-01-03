@@ -264,41 +264,40 @@
                 <capture number="2" name="punctuation.separator.attribute"/>
                 <capture number="3" name="punctuation.separator.namespace"/>
             </zone>
-            <!--<include collection="strings"/>-->
+            <include collection="strings"/>
         </collection>
-                
-        <!-- Strings double quoted -->
-        <collection name="string-double-quoted">
-            <zone name="string.quoted.double.cfm">
+        
+        <collection name="strings">
+            <zone name="attribute-value.string.quoted.double">
                 <starts-with>
                     <expression>"</expression>
+                    <capture number="0" name="punctuation.definition.begin"/>
                 </starts-with>
                 <ends-with>
                     <expression>"</expression>
+                    <capture number="0" name="punctuation.definition.end"/>
                 </ends-with>
-                <subzones>
-                    <include collection="embedded-code"/>
-                    <include collection="entities"/>
-                </subzones>
+        		<subzones name="attribute-value.value">
+        		    <include collection="embedded-code"/>
+        		    <include collection="entities"/>
+        		</subzones>
             </zone>
-        </collection> 
-        
-        <!-- Strings single quoted -->
-        <collection name="string-single-quoted">
-            <zone name="string.quoted.single.cfm">
+            <zone name="attribute-value.string.quoted.single">
                 <starts-with>
                     <expression>'</expression>
+                    <capture number="0" name="punctuation.definition.begin"/>
                 </starts-with>
                 <ends-with>
                     <expression>'</expression>
+                    <capture number="0" name="punctuation.definition.end"/>
                 </ends-with>
-                <subzones>
-                    <include collection="embedded-code"/>
-                    <include collection="entities"/>
-                </subzones>
+        		<subzones name="attribute-value.value">
+        		    <include collection="embedded-code"/>
+        		    <include collection="entities"/>
+        		</subzones>
             </zone>
-        </collection> 
-        
+        </collection>
+            
         <!-- CFML Functions -->
         <collection name="coldfusion-functions">
 			<zone name="support.function.cfm">
@@ -320,8 +319,6 @@
         <!-- Other tag stuff -->
         <collection name="tag-stuff">
             <include collection="tag-attributes" />
-            <include collection="string-double-quoted" />
-            <include collection="string-single-quoted" />
             <include collection="embedded-code" />
             <include collection="literal-keyword" />
             <include collection="coldfusion-script" />

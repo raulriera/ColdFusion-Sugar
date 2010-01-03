@@ -9,7 +9,7 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 	<!-- ColdFusion tags -->
 	<provider>
 		<selector>sourcecode.cfm - *, meta.tag.cfoutput.cfm, meta.tag.cfquery.cfm, meta.tag.self-closing.cfm, meta.tag.open.other.cfm</selector>
-		<completions>com.scottmebberson.cfml.tags</completions>
+		<completions>com.adobe.cfml.tags</completions>
 		<complete-match capture="2">(&lt;)([?!cf][a-zA-Z0-9-]*)</complete-match>
 		<require-suffix>(\s|>|^)</require-suffix>
 	</provider>
@@ -17,15 +17,15 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 	<!-- ColdFusion attributes -->
 	<provider>
 		<selector>meta.tag.open.cfm:has-child(name:capture(tag)) > attribute-name, meta.tag.open.cfm:has-child(name:capture(tag)) > punctuation.definition.end, meta.tag.open.cfm:has-child(name:capture(tag))</selector>
-		<completions>com.scottmebberson.cfml.tag.${tag}.attributes</completions>
+		<completions>com.adobe.cfml.tag.${tag}.attributes</completions>
 		<complete-match capture="2">(\s)([a-zA-Z0-9-]*)</complete-match>
 		<require-suffix>(\s|=|>|^)</require-suffix>
 	</provider>
 
 	<!-- ColdFusion attribute values -->
 	<provider>
-		<selector>meta.tag.open.cfm:has-child(name:capture(tag)) > attribute-name:capture(attribute) + string > punctuation.end, meta.tag.self-closing.cfm:has-child(name:capture(tag)) > attribute-name:capture(attribute) + string > punctuation.end</selector>
-		<completions>com.scottmebberson.cfml.tag.${tag}.attribute-values.${attribute}</completions>
+		<selector>meta.tag.open.cfm:has-child(name:capture(tag)) > attribute-name:capture(attribute) + string > punctuation.definition.end, meta.tag.self-closing.cfm:has-child(name:capture(tag)) > attribute-name:capture(attribute) + string > punctuation.definition.end</selector>
+		<completions>com.adobe.cfml.tag.${tag}.attribute-values.${attribute}</completions>
 		<complete-match capture="2">(\"|\')([a-zA-Z0-9-]*)</complete-match>
 		<require-suffix>(\"|\')</require-suffix>
 	</provider>
@@ -33,7 +33,7 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 	<!-- ColdFusion functions -->
 	<provider>
 		<selector>sourcecode.cfm - *, meta.tag.cfoutput.cfm, meta.tag.cfquery.cfm, meta.tag.self-closing.cfm, meta.tag.open.other.cfm</selector>
-		<completions>com.scottmebberson.cfml.functions</completions>
+		<completions>com.adobe.cfml.functions</completions>
 		<complete-match capture="1">([a-zA-Z_$]\w*)</complete-match>
 	</provider>
 	 

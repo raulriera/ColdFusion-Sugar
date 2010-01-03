@@ -13,17 +13,17 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		</append-dynamic>
 	</behavior>
 	
-	<set name="com.scottmebberson.cfml.tag.cfabort.attributes">
+	<set name="com.adobe.cfml.tag.cfabort.attributes">
 		<completion string="showError" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfajaximport.attributes">
+	<set name="com.adobe.cfml.tag.cfajaximport.attributes">
 		<completion string="cssSrc" />
 		<completion string="scriptSrc" />
 		<completion string="tags" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfajaxproxy.attributes">
+	<set name="com.adobe.cfml.tag.cfajaxproxy.attributes">
 		<completion string="cfc" />
 		<completion string="jsclassname" />
 		<!-- or -->
@@ -32,7 +32,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="onSuccess" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfapplet.attributes">
+	<set name="com.adobe.cfml.tag.cfapplet.attributes">
 		<completion string="appletSource" />
 		<completion string="name" />
 		<completion string="align" />
@@ -44,7 +44,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="width" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfapplication.attributes">
+	<set name="com.adobe.cfml.tag.cfapplication.attributes">
 		<completion string="name" />
 		<completion string="applicationTimeout" />
 		<completion string="clientManagement" />
@@ -59,7 +59,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="setDomainCookies" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfargument.attributes">
+	<set name="com.adobe.cfml.tag.cfargument.attributes">
 		<completion string="name" />
 		<completion string="default" />
 		<completion string="displayname" />
@@ -68,12 +68,12 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="type" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfassociate.attributes">
+	<set name="com.adobe.cfml.tag.cfassociate.attributes">
 		<completion string="baseTag" />
 		<completion string="dataCollection" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfcache.attributes">
+	<set name="com.adobe.cfml.tag.cfcache.attributes">
 		<completion string="action" />
 		<completion string="directory" />
 		<completion string="expireURL" />
@@ -84,7 +84,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="username" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfcalendar.attributes">
+	<set name="com.adobe.cfml.tag.cfcalendar.attributes">
 		<completion string="name" />
 		<completion string="dayNames" />
 		<completion string="disabled" />
@@ -105,16 +105,16 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="width" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfcase.attributes">
+	<set name="com.adobe.cfml.tag.cfcase.attributes">
 		<completion string="value" />
 		<completion string="delimiters" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfcatch.attributes">
+	<set name="com.adobe.cfml.tag.cfcatch.attributes">
 		<completion string="type" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfchart.attributes">
+	<set name="com.adobe.cfml.tag.cfchart.attributes">
 		<completion string="backgroundColor" />
 		<completion string="chartHeight" />
 		<completion string="chartWidth" />
@@ -153,12 +153,12 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="yOffset" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfchartdata.attributes">
+	<set name="com.adobe.cfml.tag.cfchartdata.attributes">
 		<completion string="item" />
 		<completion string="value" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfchartseries.attributes">
+	<set name="com.adobe.cfml.tag.cfchartseries.attributes">
 		<completion string="type" />
 		<completion string="itemColumn" />
 		<completion string="valueColumn" />
@@ -171,14 +171,14 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="seriesLabel" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfcol.attributes">
+	<set name="com.adobe.cfml.tag.cfcol.attributes">
 		<completion string="header" />
 		<completion string="text" />
 		<completion string="align" />
 		<completion string="width" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfcollection.attributes">
+	<set name="com.adobe.cfml.tag.cfcollection.attributes">
 		<completion string="action" />
 		<completion string="categories" />
 		<completion string="collection" />
@@ -187,7 +187,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="path" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfcomponent.attributes">
+	<set name="com.adobe.cfml.tag.cfcomponent.attributes">
 		<completion string="bindingname" />
 		<completion string="displayname" />
 		<completion string="extends" />
@@ -202,7 +202,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="wsdlfile" />		
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfcontent.attributes">
+	<set name="com.adobe.cfml.tag.cfcontent.attributes">
 		<completion string="deleteFile" />
 		<completion string="file" />
 		<completion string="reset" />
@@ -210,7 +210,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="variable" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfcookie.attributes">
+	<set name="com.adobe.cfml.tag.cfcookie.attributes">
 		<completion string="name" />
 		<completion string="domain" />
 		<completion string="expires" />
@@ -219,7 +219,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="value" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfdbinfo.attributes">
+	<set name="com.adobe.cfml.tag.cfdbinfo.attributes">
 		<completion string="datasource" />
 		<completion string="name" />
 		<completion string="type" />
@@ -230,7 +230,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="username" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfdirectory.attributes">
+	<set name="com.adobe.cfml.tag.cfdirectory.attributes">
 		<completion string="directory" />
 		<completion string="action" />
 		<completion string="filter" />
@@ -243,7 +243,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="type" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfdiv.attributes">
+	<set name="com.adobe.cfml.tag.cfdiv.attributes">
 		<completion string="bind" />
 		<completion string="bindOnLoad" />
 		<completion string="ID" />
@@ -251,7 +251,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="tagName" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfdocument.attributes">
+	<set name="com.adobe.cfml.tag.cfdocument.attributes">
 		<completion string="authPassword" />
 		<completion string="authUser" />
 		<completion string="backgroundVisible" />
@@ -287,11 +287,11 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="userPassword" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfdocumentitem.attributes">
+	<set name="com.adobe.cfml.tag.cfdocumentitem.attributes">
 		<completion string="type" />
 	</set>	
 	
-	<set name="com.scottmebberson.cfml.tag.cfdocumentsection.attributes">
+	<set name="com.adobe.cfml.tag.cfdocumentsection.attributes">
 		<completion string="authPassword" />
 		<completion string="authUser" />
 		<completion string="marginBottom" />
@@ -305,7 +305,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="userAgent" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfdump.attributes">
+	<set name="com.adobe.cfml.tag.cfdump.attributes">
 		<completion string="var" />
 		<completion string="expand" />
 		<completion string="format" />
@@ -319,14 +319,14 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="top" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cferror.attributes">
+	<set name="com.adobe.cfml.tag.cferror.attributes">
 		<completion string="template" />
 		<completion string="type" />
 		<completion string="exception" />
 		<completion string="mailTo" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfexchangecalendar.attributes">
+	<set name="com.adobe.cfml.tag.cfexchangecalendar.attributes">
 		<completion string="action" />
 		<completion string="attachmentPath" />
 		<completion string="connection" />
@@ -340,7 +340,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="uid" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfexchangeconnection.attributes">
+	<set name="com.adobe.cfml.tag.cfexchangeconnection.attributes">
 		<completion string="action" />
 		<completion string="connection" />
 		<completion string="ExchangeServerLanguage" />
@@ -358,7 +358,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="username" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfexchangecontact.attributes">
+	<set name="com.adobe.cfml.tag.cfexchangecontact.attributes">
 		<completion string="action" />
 		<completion string="attachmentPath" />
 		<completion string="connection" />
@@ -369,14 +369,14 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="uid" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfexchangefilter.attributes">
+	<set name="com.adobe.cfml.tag.cfexchangefilter.attributes">
 		<completion string="name" />
 		<completion string="from" />
 		<completion string="to" />
 		<completion string="value" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfexchangemail.attributes">
+	<set name="com.adobe.cfml.tag.cfexchangemail.attributes">
 		<completion string="action" />
 		<completion string="attachmentPath" />
 		<completion string="connection" />
@@ -390,7 +390,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="uid" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfexchangetask.attributes">
+	<set name="com.adobe.cfml.tag.cfexchangetask.attributes">
 		<completion string="action" />
 		<completion string="attachmentPath" />
 		<completion string="connection" />
@@ -400,7 +400,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="uid" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfexecute.attributes">
+	<set name="com.adobe.cfml.tag.cfexecute.attributes">
 		<completion string="name" />
 		<completion string="arguments" />
 		<completion string="outputFile" />
@@ -408,11 +408,11 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="variable" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfexit.attributes">
+	<set name="com.adobe.cfml.tag.cfexit.attributes">
 		<completion string="method" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cffeed.attributes">
+	<set name="com.adobe.cfml.tag.cffeed.attributes">
 		<completion string="action" />
 		<completion string="columnMap" />
 		<completion string="enclosureDir" />
@@ -433,7 +433,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="xmlVar" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cffile.attributes">
+	<set name="com.adobe.cfml.tag.cffile.attributes">
 		<completion string="action" />
 		<completion string="file" />
 		<completion string="output" />
@@ -451,11 +451,11 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="result" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfflush.attributes">
+	<set name="com.adobe.cfml.tag.cfflush.attributes">
 		<completion string="interval" />
 	</set>	
 	
-	<set name="com.scottmebberson.cfml.tag.cfform.attributes">
+	<set name="com.adobe.cfml.tag.cfform.attributes">
 		<completion string="accessible" />
 		<completion string="action" />
 		<completion string="archive" />
@@ -480,7 +480,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="wMode" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfformgroup.attributes">
+	<set name="com.adobe.cfml.tag.cfformgroup.attributes">
 		<completion string="type" />
 		<completion string="query" />
 		<completion string="enabled" />
@@ -497,7 +497,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="width" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfformitem.attributes">
+	<set name="com.adobe.cfml.tag.cfformitem.attributes">
 		<completion string="type" />
 		<completion string="bind" />
 		<completion string="enabled" />
@@ -508,7 +508,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="width" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfftp.attributes">
+	<set name="com.adobe.cfml.tag.cfftp.attributes">
 		<completion string="action" />
 		<completion string="actionparam" />
 		<completion string="buffersize" />
@@ -546,7 +546,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="mode" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cffunction.attributes">
+	<set name="com.adobe.cfml.tag.cffunction.attributes">
 		<completion string="name" />
 		<completion string="access" />
 		<completion string="description" />
@@ -560,7 +560,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="verifyClient" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfgrid.attributes">
+	<set name="com.adobe.cfml.tag.cfgrid.attributes">
 		<completion string="name" />
 		<completion string="align" />
 		<completion string="appendKey" />
@@ -628,7 +628,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="width" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfgridcolumn.attributes">
+	<set name="com.adobe.cfml.tag.cfgridcolumn.attributes">
 		<completion string="name" />
 		<completion string="bgColor" />
 		<completion string="bold" />
@@ -658,11 +658,11 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="width" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfgridrow.attributes">
+	<set name="com.adobe.cfml.tag.cfgridrow.attributes">
 		<completion string="data" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfgridupdate.attributes">
+	<set name="com.adobe.cfml.tag.cfgridupdate.attributes">
 		<completion string="grid" />
 		<completion string="dataSource" />
 		<completion string="tableName" />
@@ -673,7 +673,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="username" />
 	</set>	
 
-	<set name="com.scottmebberson.cfml.tag.cfheader.attributes">
+	<set name="com.adobe.cfml.tag.cfheader.attributes">
 		<completion string="charset" />
 		<completion string="name" />
 		<completion string="statusCode" />
@@ -681,11 +681,11 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="value" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfhtmlhead.attributes">
+	<set name="com.adobe.cfml.tag.cfhtmlhead.attributes">
 		<completion string="text" />
 	</set>	
 	
-	<set name="com.scottmebberson.cfml.tag.cfhttp.attributes">
+	<set name="com.adobe.cfml.tag.cfhttp.attributes">
 		<completion string="url" />
 		<completion string="charset" />
 		<completion string="clientCert" />
@@ -715,7 +715,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="textQualifier" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfhttpparam.attributes">
+	<set name="com.adobe.cfml.tag.cfhttpparam.attributes">
 		<completion string="type" />
 		<completion string="encoded" />
 		<completion string="file" />
@@ -724,7 +724,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="value" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfimage.attributes">
+	<set name="com.adobe.cfml.tag.cfimage.attributes">
 		<completion string="action" />
 		<completion string="angle" />
 		<completion string="color" />
@@ -745,16 +745,16 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="width" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfimport.attributes">
+	<set name="com.adobe.cfml.tag.cfimport.attributes">
 		<completion string="taglib" />
 		<completion string="prefix" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfinclude.attributes">
+	<set name="com.adobe.cfml.tag.cfinclude.attributes">
 		<completion string="template" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfindex.attributes">
+	<set name="com.adobe.cfml.tag.cfindex.attributes">
 		<completion string="action" />
 		<completion string="collection" />
 		<completion string="body" />
@@ -776,7 +776,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="URLpath" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfinput.attributes">
+	<set name="com.adobe.cfml.tag.cfinput.attributes">
 		<completion string="name" />
 		<completion string="autosuggest" />
 		<completion string="autosuggestBindDelay" />
@@ -826,7 +826,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="width" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfinsert.attributes">
+	<set name="com.adobe.cfml.tag.cfinsert.attributes">
 		<completion string="dataSource" />
 		<completion string="tableName" />
 		<completion string="formFields" />
@@ -836,13 +836,13 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="username" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfinterface.attributes">
+	<set name="com.adobe.cfml.tag.cfinterface.attributes">
 		<completion string="displayName" />
 		<completion string="extends" />
 		<completion string="hint" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfinvoke.attributes">
+	<set name="com.adobe.cfml.tag.cfinvoke.attributes">
 		<completion string="argumentCollection" />
 		<completion string="component" />
 		<!--<completion string="input_params" />-->
@@ -861,13 +861,13 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="wsdl2javaArgs" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfinvokeargument.attributes">
+	<set name="com.adobe.cfml.tag.cfinvokeargument.attributes">
 		<completion string="name" />
 		<completion string="value" />
 		<completion string="omit" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cflayout.attributes">
+	<set name="com.adobe.cfml.tag.cflayout.attributes">
 		<completion string="type" />
 		<completion string="align" />
 		<completion string="name" />
@@ -877,7 +877,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="tabPosition" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cflayoutarea.attributes">
+	<set name="com.adobe.cfml.tag.cflayoutarea.attributes">
 		<completion string="align" />
 		<completion string="closable" />
 		<completion string="collapsible" />
@@ -899,7 +899,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="title" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfldap.attributes">
+	<set name="com.adobe.cfml.tag.cfldap.attributes">
 		<completion string="action" />
 		<completion string="server" />
 		<completion string="attributes" />
@@ -925,13 +925,13 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="username" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cflocation.attributes">
+	<set name="com.adobe.cfml.tag.cflocation.attributes">
 		<completion string="url" />
 		<completion string="addToken" />
 		<completion string="statusCode" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cflock.attributes">
+	<set name="com.adobe.cfml.tag.cflock.attributes">
 		<completion string="timeout" />
 		<completion string="name" />
 		<completion string="scope" />
@@ -939,7 +939,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="type" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cflog.attributes">
+	<set name="com.adobe.cfml.tag.cflog.attributes">
 		<completion string="text" />
 		<completion string="application" />
 		<completion string="file" />
@@ -947,19 +947,19 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="type" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cflogin.attributes">
+	<set name="com.adobe.cfml.tag.cflogin.attributes">
 		<completion string="applicationtoken" />
 		<completion string="cookiedomain" />
 		<completion string="idletimeout" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfloginuser.attributes">
+	<set name="com.adobe.cfml.tag.cfloginuser.attributes">
 		<completion string="name" />
 		<completion string="password" />
 		<completion string="roles" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfloop.attributes">
+	<set name="com.adobe.cfml.tag.cfloop.attributes">
 		<completion string="index" />
 		<completion string="from" />
 		<completion string="to" />
@@ -977,7 +977,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="item" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfmail.attributes">
+	<set name="com.adobe.cfml.tag.cfmail.attributes">
 		<completion string="bcc" />
 		<completion string="cc" />
 		<completion string="charset" />
@@ -1007,7 +1007,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="wraptext" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfmailparam.attributes">
+	<set name="com.adobe.cfml.tag.cfmailparam.attributes">
 		<completion string="contentID" />
 		<completion string="disposition" />
 		<completion string="file" />
@@ -1016,13 +1016,13 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="value" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfmailpart.attributes">
+	<set name="com.adobe.cfml.tag.cfmailpart.attributes">
 		<completion string="charset" />
 		<completion string="type" />
 		<completion string="wraptext" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfmenu.attributes">
+	<set name="com.adobe.cfml.tag.cfmenu.attributes">
 		<completion string="bgColor" />
 		<completion string="childStyle" />
 		<completion string="font" />
@@ -1036,7 +1036,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="width" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfmenuitem.attributes">
+	<set name="com.adobe.cfml.tag.cfmenuitem.attributes">
 		<completion string="display" />
 		<completion string="childStyle" />
 		<completion string="divider" />
@@ -1048,14 +1048,14 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="target" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfmodule.attributes">
+	<set name="com.adobe.cfml.tag.cfmodule.attributes">
 		<completion string="attributeCollection" />
 		<completion string="attribute_name" />
 		<completion string="name" />
 		<completion string="template" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfNTauthenticate.attributes">
+	<set name="com.adobe.cfml.tag.cfNTauthenticate.attributes">
 		<completion string="domain" />
 		<completion string="password" />
 		<completion string="username" />
@@ -1064,7 +1064,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="throwOnError" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfobject.attributes">
+	<set name="com.adobe.cfml.tag.cfobject.attributes">
 		<completion string="class" />
 		<completion string="name" />
 		<completion string="type" />
@@ -1089,11 +1089,11 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="wsportname" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfobjectcache.attributes">
+	<set name="com.adobe.cfml.tag.cfobjectcache.attributes">
 		<completion string="action" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfoutput.attributes">
+	<set name="com.adobe.cfml.tag.cfoutput.attributes">
 		<completion string="group" />
 		<completion string="groupCaseSensitive" />
 		<completion string="maxRows" />
@@ -1101,7 +1101,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="startRow" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfparam.attributes">
+	<set name="com.adobe.cfml.tag.cfparam.attributes">
 		<completion string="name" />
 		<completion string="default" />
 		<completion string="max" />
@@ -1110,7 +1110,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="type" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfpdf.attributes">
+	<set name="com.adobe.cfml.tag.cfpdf.attributes">
 		<completion string="action" />
 		<completion string="ascending" />
 		<completion string="copyFrom" />
@@ -1148,7 +1148,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="version" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfpdfform.attributes">
+	<set name="com.adobe.cfml.tag.cfpdfform.attributes">
 		<completion string="action" />
 		<completion string="destination" />
 		<completion string="overwrite" />
@@ -1158,24 +1158,24 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="XMLdata" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfpdfformparam.attributes">
+	<set name="com.adobe.cfml.tag.cfpdfformparam.attributes">
 		<completion string="index" />
 		<completion string="name" />
 		<completion string="value" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfpdfparam.attributes">
+	<set name="com.adobe.cfml.tag.cfpdfparam.attributes">
 		<completion string="pages" />
 		<completion string="password" />
 		<completion string="source" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfpdfsubform.attributes">
+	<set name="com.adobe.cfml.tag.cfpdfsubform.attributes">
 		<completion string="index" />
 		<completion string="name" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfpod.attributes">
+	<set name="com.adobe.cfml.tag.cfpod.attributes">
 		<completion string="bodyStyle" />
 		<completion string="headerStyle" />
 		<completion string="height" />
@@ -1187,7 +1187,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="width" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfpop.attributes">
+	<set name="com.adobe.cfml.tag.cfpop.attributes">
 		<completion string="server" />
 		<completion string="action" />
 		<completion string="attachmentPath" />
@@ -1204,7 +1204,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="username" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfpresentation.attributes">
+	<set name="com.adobe.cfml.tag.cfpresentation.attributes">
 		<completion string="authPassword" />
 		<completion string="authUser" />
 		<completion string="autoPlay" />
@@ -1231,7 +1231,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="userAgent" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfpresentationslide.attributes">
+	<set name="com.adobe.cfml.tag.cfpresentationslide.attributes">
 		<completion string="advance" />
 		<completion string="audio" />
 		<completion string="authPassword" />
@@ -1250,7 +1250,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="video" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfpresenter.attributes">
+	<set name="com.adobe.cfml.tag.cfpresenter.attributes">
 		<completion string="biography" />
 		<completion string="email" />
 		<completion string="image" />
@@ -1259,7 +1259,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="title" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfprint.attributes">
+	<set name="com.adobe.cfml.tag.cfprint.attributes">
 		<completion string="attributeStruct" />
 		<completion string="color" />
 		<completion string="copies" />
@@ -1272,12 +1272,12 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="type" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfprocessingdirective.attributes">
+	<set name="com.adobe.cfml.tag.cfprocessingdirective.attributes">
 		<completion string="pageEncoding" />
 		<completion string="suppressWhiteSpace" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfprocparam.attributes">
+	<set name="com.adobe.cfml.tag.cfprocparam.attributes">
 		<completion string="CFSQLType" />
 		<completion string="maxLength" />
 		<completion string="null" />
@@ -1287,13 +1287,13 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="variable" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfprocresult.attributes">
+	<set name="com.adobe.cfml.tag.cfprocresult.attributes">
 		<completion string="name" />
 		<completion string="maxRows" />
 		<completion string="resultSet" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfproperty.attributes">
+	<set name="com.adobe.cfml.tag.cfproperty.attributes">
 		<completion string="name" />
 		<completion string="default" />
 		<completion string="displayname" />
@@ -1302,7 +1302,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="type" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfquery.attributes">
+	<set name="com.adobe.cfml.tag.cfquery.attributes">
 		<completion string="name" />
 		<completion string="blockFactor" />
 		<completion string="cachedAfter" />
@@ -1317,7 +1317,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="username" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfqueryparam.attributes">
+	<set name="com.adobe.cfml.tag.cfqueryparam.attributes">
 		<completion string="value" />
 		<completion string="CFSQLType" />
 		<completion string="list" />
@@ -1327,7 +1327,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="separator" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfregistry.attributes">
+	<set name="com.adobe.cfml.tag.cfregistry.attributes">
 		<completion string="action" />
 		<completion string="branch" />
 		<completion string="name" />
@@ -1338,7 +1338,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="value" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfreport.attributes">
+	<set name="com.adobe.cfml.tag.cfreport.attributes">
 		<completion string="datasource" />
 		<completion string="encryption" />
 		<completion string="filename" />
@@ -1361,7 +1361,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="userPassword" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfreportparam.attributes">
+	<set name="com.adobe.cfml.tag.cfreportparam.attributes">
 		<completion string="chart" />
 		<completion string="name" />
 		<completion string="query" />
@@ -1371,15 +1371,15 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="value" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfreturn.attributes">
+	<set name="com.adobe.cfml.tag.cfreturn.attributes">
 		<completion string="expr" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfsavecontent.attributes">
+	<set name="com.adobe.cfml.tag.cfsavecontent.attributes">
 		<completion string="variable" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfschedule.attributes">
+	<set name="com.adobe.cfml.tag.cfschedule.attributes">
 		<completion string="action" />
 		<completion string="task" />
 		<completion string="endDate" />
@@ -1403,7 +1403,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="username" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfsearch.attributes">
+	<set name="com.adobe.cfml.tag.cfsearch.attributes">
 		<completion string="name" />
 		<completion string="collection" />
 		<completion string="category" />
@@ -1422,7 +1422,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="type" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfselect.attributes">
+	<set name="com.adobe.cfml.tag.cfselect.attributes">
 		<completion string="name" />
 		<completion string="bind" />
 		<completion string="bindAttribute" />
@@ -1457,18 +1457,18 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="width" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfset.attributes">
+	<set name="com.adobe.cfml.tag.cfset.attributes">
 		<completion string="variable_name" />
 		<completion string="var" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfsetting.attributes">
+	<set name="com.adobe.cfml.tag.cfsetting.attributes">
 		<completion string="enableCFoutputOnly" />
 		<completion string="requestTimeout" />
 		<completion string="showDebugOutput" />
 	</set>
 	
-	<set name="com.scottmebberson.cfml.tag.cfslider.attributes">
+	<set name="com.adobe.cfml.tag.cfslider.attributes">
 		<completion string="name" />
 		<completion string="align" />
 		<completion string="bgColor" />
@@ -1493,7 +1493,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="width" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfsprydataset.attributes">
+	<set name="com.adobe.cfml.tag.cfsprydataset.attributes">
 		<completion string="bind" />
 		<completion string="name" />
 		<completion string="onBindError" />
@@ -1502,7 +1502,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="xpath" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfstoredproc.attributes">
+	<set name="com.adobe.cfml.tag.cfstoredproc.attributes">
 		<completion string="dataSource" />
 		<completion string="procedure" />
 		<completion string="blockFactor" />
@@ -1513,11 +1513,11 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="username" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfswitch.attributes">
+	<set name="com.adobe.cfml.tag.cfswitch.attributes">
 		<completion string="expression" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cftable.attributes">
+	<set name="com.adobe.cfml.tag.cftable.attributes">
 		<completion string="query" />
 		<completion string="border" />
 		<completion string="colHeaders" />
@@ -1528,7 +1528,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="startRow" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cftextarea.attributes">
+	<set name="com.adobe.cfml.tag.cftextarea.attributes">
 		<completion string="name" />
 		<completion string="basepath" />
 		<completion string="bind" />
@@ -1573,7 +1573,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="wrap" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfthread.attributes">
+	<set name="com.adobe.cfml.tag.cfthread.attributes">
 		<completion string="action" />
 		<completion string="duration" />
 		<completion string="name" />
@@ -1581,7 +1581,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="timeout" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfthrow.attributes">
+	<set name="com.adobe.cfml.tag.cfthrow.attributes">
 		<completion string="detail" />
 		<completion string="errorCode" />
 		<completion string="extendedInfo" />
@@ -1590,12 +1590,12 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="type" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cftimer.attributes">
+	<set name="com.adobe.cfml.tag.cftimer.attributes">
 		<completion string="label" />
 		<completion string="type" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cftooltip.attributes">
+	<set name="com.adobe.cfml.tag.cftooltip.attributes">
 		<completion string="autoDismissDelay" />
 		<completion string="hideDelay" />
 		<completion string="preventOverlap" />
@@ -1604,7 +1604,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="tooltip" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cftrace.attributes">
+	<set name="com.adobe.cfml.tag.cftrace.attributes">
 		<completion string="abort" />
 		<completion string="category" />
 		<completion string="inline" />
@@ -1613,13 +1613,13 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="var" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cftransaction.attributes">
+	<set name="com.adobe.cfml.tag.cftransaction.attributes">
 		<completion string="action" />
 		<completion string="isolation" />
 		<completion string="savepoint" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cftree.attributes">
+	<set name="com.adobe.cfml.tag.cftree.attributes">
 		<completion string="name" />
 		<completion string="align" />
 		<completion string="appendKey" />
@@ -1654,7 +1654,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="width" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cftreeitem.attributes">
+	<set name="com.adobe.cfml.tag.cftreeitem.attributes">
 		<completion string="value" />
 		<completion string="bind" />
 		<completion string="display" />
@@ -1669,7 +1669,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="onBindError" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfupdate.attributes">
+	<set name="com.adobe.cfml.tag.cfupdate.attributes">
 		<completion string="dataSource" />
 		<completion string="tableName" />
 		<completion string="formFields" />
@@ -1679,7 +1679,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="username" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfwddx.attributes">
+	<set name="com.adobe.cfml.tag.cfwddx.attributes">
 		<completion string="action" />
 		<completion string="input" />
 		<completion string="output" />
@@ -1688,7 +1688,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="validate" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfwindow.attributes">
+	<set name="com.adobe.cfml.tag.cfwindow.attributes">
 		<completion string="bodyStyle" />
 		<completion string="center" />
 		<completion string="closable" />
@@ -1710,12 +1710,12 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="y" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfxml.attributes">
+	<set name="com.adobe.cfml.tag.cfxml.attributes">
 		<completion string="variable" />
 		<completion string="caseSensitive" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfzip.attributes">
+	<set name="com.adobe.cfml.tag.cfzip.attributes">
 		<completion string="action" />
 		<completion string="charset" />
 		<completion string="destination" />
@@ -1732,7 +1732,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="variable" />
 	</set>
 
-	<set name="com.scottmebberson.cfml.tag.cfzipparam.attributes">
+	<set name="com.adobe.cfml.tag.cfzipparam.attributes">
 		<completion string="charset" />
 		<completion string="content" />
 		<completion string="entryPath" />
@@ -1743,7 +1743,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 	</set>
 
 	<!--	
-	<set name="com.scottmebberson.cfml.tag.cfTAGNAME.attributes">
+	<set name="com.adobe.cfml.tag.cfTAGNAME.attributes">
 		<completion string="XXX" />
 		<completion string="XXX" />
 		<completion string="XXX" />

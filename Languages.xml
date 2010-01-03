@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
 
-    <language id="com.scottmebberson.ColdFusion">
+    <language id="com.adobe.ColdFusion">
         
         <!-- Define what syntax this language should use -->
         <!-- Note: root-zone will be deprecated in the next beta 
@@ -34,10 +34,10 @@
 		        Jonathan Christopher, Scott Mebberson, Raul Riera
 		    </author>
 		    <identifier>
-		        com.scottmebberson.sugar.ColdFusion
+		        com.adobe.sugar.ColdFusion
 		    </identifier>
 		    <version status="preview">
-		        0.4
+		        0.5
 		    </version>
 		</meta>
 		
